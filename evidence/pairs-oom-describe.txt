@@ -1,0 +1,65 @@
+$ kubectl -n skills-1c describe pod pairs-oom-nfc89
+Name:             pairs-oom-nfc89
+Namespace:        skills-1c
+Priority:         0
+Service Account:  default
+Node:             itmo-j3312-control-plane/172.18.0.2
+Start Time:       Tue, 24 Nov 2026 21:19:16 +0300
+Labels:           batch.kubernetes.io/controller-uid=40479ca3-1864-44ce-8a58-8fa16ee8e77b
+                  batch.kubernetes.io/job-name=pairs-oom
+                  controller-uid=40479ca3-1864-44ce-8a58-8fa16ee8e77b
+                  job-name=pairs-oom
+Annotations:      <none>
+Status:           Failed
+IP:               10.244.0.6
+IPs:
+  IP:           10.244.0.6
+Controlled By:  Job/pairs-oom
+Containers:
+  pairs:
+    Container ID:  containerd://ddaed743a29dd6fc5f481eb7ff8c2536738e97c9942796bc3c4de6e9b78f4e8a
+    Image:         skills-1c:lab5
+    Image ID:      sha256:8a2a3c6c0d6e2744ed7a360b5beb89253468667660d1ab0500976f30f9e4441b
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      single
+    State:          Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Tue, 24 Nov 2026 21:19:17 +0300
+      Finished:     Tue, 24 Nov 2026 21:19:37 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  12Mi
+    Requests:
+      cpu:        250m
+      memory:     8Mi
+    Environment:  <none>
+    Mounts:
+      /input/it_vacancies_2024.csv from csv (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  csv:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lab-input/it_vacancies_2024.csv
+    HostPathType:  File
+QoS Class:         Burstable
+Node-Selectors:    <none>
+Tolerations:       node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                   node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  27s   default-scheduler  Successfully assigned skills-1c/pairs-oom-nfc89 to itmo-j3312-control-plane
+  Normal  Pulled     26s   kubelet            Container image "skills-1c:lab5" already present on machine
+  Normal  Created    26s   kubelet            Created container: pairs
+  Normal  Started    26s   kubelet            Started container pairs

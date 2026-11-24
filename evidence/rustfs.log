@@ -1,0 +1,4 @@
+$ kubectl -n skills-1c logs rustfs-0 --tail=100
+Initializing data directories: /data/disk1 /data/disk2 /data/disk3 /data/disk4
+Initializing log directory: /logs
+Starting: /usr/bin/rustfs  /data/disk1 /data/disk2 /data/disk3 /data/disk4

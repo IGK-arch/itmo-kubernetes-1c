@@ -1,0 +1,491 @@
+[
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1505",
+      "uid": "a6b2ae6c-4683-4e77-aeb2-76fc3fb75754"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:05Z",
+    "message": "Successfully assigned skills-quota/quota-first to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:05Z",
+      "name": "quota-first.18eb0e57971ee55a",
+      "namespace": "skills-quota",
+      "resourceVersion": "1507",
+      "uid": "daf39d27-c5a5-48f8-87d4-ffe52c8332d9"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:06Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1506",
+      "uid": "a6b2ae6c-4683-4e77-aeb2-76fc3fb75754"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:06Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:06Z",
+      "name": "quota-first.18eb0e57a6c8e35e",
+      "namespace": "skills-quota",
+      "resourceVersion": "1509",
+      "uid": "eb72cc97-b4e8-4fd4-a568-e4cfd12a22f5"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:06Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1506",
+      "uid": "a6b2ae6c-4683-4e77-aeb2-76fc3fb75754"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:06Z",
+    "message": "Created container: hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:06Z",
+      "name": "quota-first.18eb0e57a96b07a5",
+      "namespace": "skills-quota",
+      "resourceVersion": "1510",
+      "uid": "08d9a063-b8df-4d9b-bcf0-1adee3a9fb35"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:06Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1506",
+      "uid": "a6b2ae6c-4683-4e77-aeb2-76fc3fb75754"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:06Z",
+    "message": "Started container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:06Z",
+      "name": "quota-first.18eb0e57b4b7a427",
+      "namespace": "skills-quota",
+      "resourceVersion": "1511",
+      "uid": "8939600e-0db5-4bb2-bff5-ac1481f393a3"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:11Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1506",
+      "uid": "a6b2ae6c-4683-4e77-aeb2-76fc3fb75754"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:11Z",
+    "message": "Stopping container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:11Z",
+      "name": "quota-first.18eb0e5907ce42c2",
+      "namespace": "skills-quota",
+      "resourceVersion": "1523",
+      "uid": "3adc8be3-3ecb-4a65-8e5e-f035f68fd4d9"
+    },
+    "reason": "Killing",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:26:39Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1760",
+      "uid": "62f882cc-025b-463a-b3dd-687776241cbd"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:26:39Z",
+    "message": "Successfully assigned skills-quota/quota-first to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:26:39Z",
+      "name": "quota-first.18eb0e7b52bd7db0",
+      "namespace": "skills-quota",
+      "resourceVersion": "1762",
+      "uid": "0a8584db-d30c-44ac-9c11-7e1ab539db45"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:26:39Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1761",
+      "uid": "62f882cc-025b-463a-b3dd-687776241cbd"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:26:39Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:26:39Z",
+      "name": "quota-first.18eb0e7b5e7adfe8",
+      "namespace": "skills-quota",
+      "resourceVersion": "1764",
+      "uid": "135c7970-6936-4e56-b35a-f943f2264582"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:26:39Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1761",
+      "uid": "62f882cc-025b-463a-b3dd-687776241cbd"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:26:39Z",
+    "message": "Created container: hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:26:39Z",
+      "name": "quota-first.18eb0e7b604219d1",
+      "namespace": "skills-quota",
+      "resourceVersion": "1765",
+      "uid": "a1541abd-7d90-4fc9-8d52-bf05a0d6bc98"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:26:39Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1761",
+      "uid": "62f882cc-025b-463a-b3dd-687776241cbd"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:26:39Z",
+    "message": "Started container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:26:39Z",
+      "name": "quota-first.18eb0e7b66e80c2f",
+      "namespace": "skills-quota",
+      "resourceVersion": "1766",
+      "uid": "e6b37403-6e10-468b-80e6-0e0149179822"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:26:41Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-first",
+      "namespace": "skills-quota",
+      "resourceVersion": "1761",
+      "uid": "62f882cc-025b-463a-b3dd-687776241cbd"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:26:41Z",
+    "message": "Stopping container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:26:41Z",
+      "name": "quota-first.18eb0e7be94faf71",
+      "namespace": "skills-quota",
+      "resourceVersion": "1773",
+      "uid": "11c9a176-da82-4b1a-8632-f3261e36d7f7"
+    },
+    "reason": "Killing",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:16Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "quota-second",
+      "namespace": "skills-quota",
+      "resourceVersion": "1534",
+      "uid": "ab25aadd-bfe2-451e-892f-959dd5141aaa"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:16Z",
+    "message": "Successfully assigned skills-quota/quota-second to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:16Z",
+      "name": "quota-second.18eb0e5a30e961a7",
+      "namespace": "skills-quota",
+      "resourceVersion": "1536",
+      "uid": "ceac6e2e-bfb0-4ab8-a0a8-6d2217ad87a3"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:17Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-second",
+      "namespace": "skills-quota",
+      "resourceVersion": "1535",
+      "uid": "ab25aadd-bfe2-451e-892f-959dd5141aaa"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:17Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:17Z",
+      "name": "quota-second.18eb0e5a43c0b833",
+      "namespace": "skills-quota",
+      "resourceVersion": "1539",
+      "uid": "a6131edf-453e-488a-9895-dde99dccfbbf"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:17Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-second",
+      "namespace": "skills-quota",
+      "resourceVersion": "1535",
+      "uid": "ab25aadd-bfe2-451e-892f-959dd5141aaa"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:17Z",
+    "message": "Created container: hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:17Z",
+      "name": "quota-second.18eb0e5a48b3b3c5",
+      "namespace": "skills-quota",
+      "resourceVersion": "1540",
+      "uid": "8d5499ef-d0f2-4051-ab2c-f05b2c74e087"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:17Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-second",
+      "namespace": "skills-quota",
+      "resourceVersion": "1535",
+      "uid": "ab25aadd-bfe2-451e-892f-959dd5141aaa"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:17Z",
+    "message": "Started container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:17Z",
+      "name": "quota-second.18eb0e5a5553a1bf",
+      "namespace": "skills-quota",
+      "resourceVersion": "1543",
+      "uid": "4dd16a62-7913-42fb-bd33-6d39276d691d"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:20Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "quota-second",
+      "namespace": "skills-quota",
+      "resourceVersion": "1535",
+      "uid": "ab25aadd-bfe2-451e-892f-959dd5141aaa"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:20Z",
+    "message": "Stopping container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:20Z",
+      "name": "quota-second.18eb0e5af0b53776",
+      "namespace": "skills-quota",
+      "resourceVersion": "1550",
+      "uid": "fe4e619d-adba-430f-afe3-352c35b7d755"
+    },
+    "reason": "Killing",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  }
+]

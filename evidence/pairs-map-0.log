@@ -1,0 +1,3 @@
+{"event": "start", "utc": "2026-11-24T18:23:08.138048+00:00", "pod": "pairs-map-0", "mode": "map"}
+{"event": "range", "utc": "2026-11-24T18:23:09.267257+00:00", "pod": "pairs-map-0", "index": 0, "requested": "bytes=222-211909621", "http": 206, "bytes": 211909400}
+{"event": "partial", "utc": "2026-11-24T18:23:13.055161+00:00", "pod": "pairs-map-0", "index": 0, "rows": 57760, "selected": 4359, "occurrences": 47081, "unique": 10980, "sha256": "3961e2c46b82eafc7293cf0f831c066c1191797e8ce55c3278432a5dbd8e305d", "etag": "\"5d93ef0c42e6ce7b734cc44a89c4f228-102\"", "cgroup_peak_bytes": 47714304, "rss_peak_kib": 55180}

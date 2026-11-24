@@ -1,0 +1,8 @@
+{
+  "namespace": "skills-quota",
+  "hard_m": 1000,
+  "used_m": 750,
+  "request_m": 500,
+  "rejected": "Error from server (Forbidden): error when creating \"manifests/quota-second.json\": pods \"quota-second\" is forbidden: exceeded quota: cpu-budget, requested: requests.cpu=500m, used: requests.cpu=750m, limited: requests.cpu=1",
+  "after_release": "Running"
+}

@@ -1,0 +1,4 @@
+GET / PUT / GET  s3://it-vacancies/it_vacancy_data.csv  87555558 bytes  SHA-256 OK
+GET / PUT / GET  s3://it-vacancies/vacancies-sample.json  399954 bytes  SHA-256 OK
+GET / PUT / GET  s3://it-vacancies/dataset-info.json  620 bytes  SHA-256 OK
+GET / PUT / GET  s3://hh-lake/raw/it_vacancies_2024.csv  847619384 bytes  SHA-256 OK

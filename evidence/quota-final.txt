@@ -1,0 +1,9 @@
+$ kubectl -n skills-quota describe quota cpu-budget
+Name:            cpu-budget
+Namespace:       skills-quota
+Resource         Used  Hard
+--------         ----  ----
+limits.cpu       500m  2
+limits.memory    64Mi  512Mi
+requests.cpu     500m  1
+requests.memory  16Mi  256Mi

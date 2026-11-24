@@ -1,0 +1,834 @@
+[
+  {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+      "annotations": {
+        "batch.kubernetes.io/job-completion-index": "0"
+      },
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "generateName": "pairs-map-0-",
+      "generation": 1,
+      "labels": {
+        "batch.kubernetes.io/controller-uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b",
+        "batch.kubernetes.io/job-completion-index": "0",
+        "batch.kubernetes.io/job-name": "pairs-map",
+        "controller-uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b",
+        "job-name": "pairs-map"
+      },
+      "name": "pairs-map-0-gb4v8",
+      "namespace": "skills-1c",
+      "ownerReferences": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "pairs-map",
+          "uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b"
+        }
+      ],
+      "resourceVersion": "1294",
+      "uid": "f750d110-b16e-4efc-b5cb-bac0e106d85d"
+    },
+    "spec": {
+      "automountServiceAccountToken": false,
+      "containers": [
+        {
+          "args": [
+            "map"
+          ],
+          "env": [
+            {
+              "name": "S3_ENDPOINT",
+              "value": "http://rustfs.skills-1c.svc.cluster.local:9000"
+            },
+            {
+              "name": "JOB_COMPLETION_INDEX",
+              "valueFrom": {
+                "fieldRef": {
+                  "apiVersion": "v1",
+                  "fieldPath": "metadata.labels['batch.kubernetes.io/job-completion-index']"
+                }
+              }
+            }
+          ],
+          "envFrom": [
+            {
+              "secretRef": {
+                "name": "s3-auth"
+              }
+            }
+          ],
+          "image": "skills-1c:lab5",
+          "imagePullPolicy": "Never",
+          "name": "pairs",
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "384Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "96Mi"
+            }
+          },
+          "terminationMessagePath": "/dev/termination-log",
+          "terminationMessagePolicy": "File"
+        }
+      ],
+      "dnsPolicy": "ClusterFirst",
+      "enableServiceLinks": true,
+      "hostname": "pairs-map-0",
+      "nodeName": "itmo-j3312-control-plane",
+      "preemptionPolicy": "PreemptLowerPriority",
+      "priority": 0,
+      "restartPolicy": "Never",
+      "schedulerName": "default-scheduler",
+      "securityContext": {},
+      "serviceAccount": "default",
+      "serviceAccountName": "default",
+      "terminationGracePeriodSeconds": 30,
+      "tolerations": [
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/not-ready",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        },
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/unreachable",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        }
+      ]
+    },
+    "status": {
+      "conditions": [
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:14Z",
+          "observedGeneration": 1,
+          "status": "False",
+          "type": "PodReadyToStartContainers"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:07Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "True",
+          "type": "Initialized"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:13Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "Ready"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:13Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "ContainersReady"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:07Z",
+          "observedGeneration": 1,
+          "status": "True",
+          "type": "PodScheduled"
+        }
+      ],
+      "containerStatuses": [
+        {
+          "allocatedResources": {
+            "cpu": "500m",
+            "memory": "96Mi"
+          },
+          "containerID": "containerd://01ab6fc0f862512814b8298ad22b3acc6a91f229d51637274b6e2b41626f3080",
+          "image": "docker.io/library/skills-1c:lab5",
+          "imageID": "sha256:8a2a3c6c0d6e2744ed7a360b5beb89253468667660d1ab0500976f30f9e4441b",
+          "lastState": {},
+          "name": "pairs",
+          "ready": false,
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "384Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "96Mi"
+            }
+          },
+          "restartCount": 0,
+          "started": false,
+          "state": {
+            "terminated": {
+              "containerID": "containerd://01ab6fc0f862512814b8298ad22b3acc6a91f229d51637274b6e2b41626f3080",
+              "exitCode": 0,
+              "finishedAt": "2026-11-24T18:23:13Z",
+              "reason": "Completed",
+              "startedAt": "2026-11-24T18:23:07Z"
+            }
+          },
+          "user": {
+            "linux": {
+              "gid": 0,
+              "supplementalGroups": [
+                0
+              ],
+              "uid": 65532
+            }
+          }
+        }
+      ],
+      "hostIP": "172.18.0.2",
+      "hostIPs": [
+        {
+          "ip": "172.18.0.2"
+        }
+      ],
+      "observedGeneration": 1,
+      "phase": "Succeeded",
+      "podIP": "10.244.0.15",
+      "podIPs": [
+        {
+          "ip": "10.244.0.15"
+        }
+      ],
+      "qosClass": "Burstable",
+      "startTime": "2026-11-24T18:23:07Z"
+    }
+  },
+  {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+      "annotations": {
+        "batch.kubernetes.io/job-completion-index": "1"
+      },
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "generateName": "pairs-map-1-",
+      "generation": 1,
+      "labels": {
+        "batch.kubernetes.io/controller-uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b",
+        "batch.kubernetes.io/job-completion-index": "1",
+        "batch.kubernetes.io/job-name": "pairs-map",
+        "controller-uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b",
+        "job-name": "pairs-map"
+      },
+      "name": "pairs-map-1-hnfrk",
+      "namespace": "skills-1c",
+      "ownerReferences": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "pairs-map",
+          "uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b"
+        }
+      ],
+      "resourceVersion": "1293",
+      "uid": "14b64c45-2914-4afd-bde6-45ce71642726"
+    },
+    "spec": {
+      "automountServiceAccountToken": false,
+      "containers": [
+        {
+          "args": [
+            "map"
+          ],
+          "env": [
+            {
+              "name": "S3_ENDPOINT",
+              "value": "http://rustfs.skills-1c.svc.cluster.local:9000"
+            },
+            {
+              "name": "JOB_COMPLETION_INDEX",
+              "valueFrom": {
+                "fieldRef": {
+                  "apiVersion": "v1",
+                  "fieldPath": "metadata.labels['batch.kubernetes.io/job-completion-index']"
+                }
+              }
+            }
+          ],
+          "envFrom": [
+            {
+              "secretRef": {
+                "name": "s3-auth"
+              }
+            }
+          ],
+          "image": "skills-1c:lab5",
+          "imagePullPolicy": "Never",
+          "name": "pairs",
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "384Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "96Mi"
+            }
+          },
+          "terminationMessagePath": "/dev/termination-log",
+          "terminationMessagePolicy": "File"
+        }
+      ],
+      "dnsPolicy": "ClusterFirst",
+      "enableServiceLinks": true,
+      "hostname": "pairs-map-1",
+      "nodeName": "itmo-j3312-control-plane",
+      "preemptionPolicy": "PreemptLowerPriority",
+      "priority": 0,
+      "restartPolicy": "Never",
+      "schedulerName": "default-scheduler",
+      "securityContext": {},
+      "serviceAccount": "default",
+      "serviceAccountName": "default",
+      "terminationGracePeriodSeconds": 30,
+      "tolerations": [
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/not-ready",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        },
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/unreachable",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        }
+      ]
+    },
+    "status": {
+      "conditions": [
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:14Z",
+          "observedGeneration": 1,
+          "status": "False",
+          "type": "PodReadyToStartContainers"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:07Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "True",
+          "type": "Initialized"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:13Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "Ready"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:13Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "ContainersReady"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:07Z",
+          "observedGeneration": 1,
+          "status": "True",
+          "type": "PodScheduled"
+        }
+      ],
+      "containerStatuses": [
+        {
+          "allocatedResources": {
+            "cpu": "500m",
+            "memory": "96Mi"
+          },
+          "containerID": "containerd://7e0826eb83017815488338f1d1dfcdb369f8ea3032e3b7cf73c520821d1423c0",
+          "image": "docker.io/library/skills-1c:lab5",
+          "imageID": "sha256:8a2a3c6c0d6e2744ed7a360b5beb89253468667660d1ab0500976f30f9e4441b",
+          "lastState": {},
+          "name": "pairs",
+          "ready": false,
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "384Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "96Mi"
+            }
+          },
+          "restartCount": 0,
+          "started": false,
+          "state": {
+            "terminated": {
+              "containerID": "containerd://7e0826eb83017815488338f1d1dfcdb369f8ea3032e3b7cf73c520821d1423c0",
+              "exitCode": 0,
+              "finishedAt": "2026-11-24T18:23:13Z",
+              "reason": "Completed",
+              "startedAt": "2026-11-24T18:23:07Z"
+            }
+          },
+          "user": {
+            "linux": {
+              "gid": 0,
+              "supplementalGroups": [
+                0
+              ],
+              "uid": 65532
+            }
+          }
+        }
+      ],
+      "hostIP": "172.18.0.2",
+      "hostIPs": [
+        {
+          "ip": "172.18.0.2"
+        }
+      ],
+      "observedGeneration": 1,
+      "phase": "Succeeded",
+      "podIP": "10.244.0.17",
+      "podIPs": [
+        {
+          "ip": "10.244.0.17"
+        }
+      ],
+      "qosClass": "Burstable",
+      "startTime": "2026-11-24T18:23:07Z"
+    }
+  },
+  {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+      "annotations": {
+        "batch.kubernetes.io/job-completion-index": "2"
+      },
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "generateName": "pairs-map-2-",
+      "generation": 1,
+      "labels": {
+        "batch.kubernetes.io/controller-uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b",
+        "batch.kubernetes.io/job-completion-index": "2",
+        "batch.kubernetes.io/job-name": "pairs-map",
+        "controller-uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b",
+        "job-name": "pairs-map"
+      },
+      "name": "pairs-map-2-jsnfk",
+      "namespace": "skills-1c",
+      "ownerReferences": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "pairs-map",
+          "uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b"
+        }
+      ],
+      "resourceVersion": "1292",
+      "uid": "192f874c-859e-4931-ab89-b473817bb0be"
+    },
+    "spec": {
+      "automountServiceAccountToken": false,
+      "containers": [
+        {
+          "args": [
+            "map"
+          ],
+          "env": [
+            {
+              "name": "S3_ENDPOINT",
+              "value": "http://rustfs.skills-1c.svc.cluster.local:9000"
+            },
+            {
+              "name": "JOB_COMPLETION_INDEX",
+              "valueFrom": {
+                "fieldRef": {
+                  "apiVersion": "v1",
+                  "fieldPath": "metadata.labels['batch.kubernetes.io/job-completion-index']"
+                }
+              }
+            }
+          ],
+          "envFrom": [
+            {
+              "secretRef": {
+                "name": "s3-auth"
+              }
+            }
+          ],
+          "image": "skills-1c:lab5",
+          "imagePullPolicy": "Never",
+          "name": "pairs",
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "384Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "96Mi"
+            }
+          },
+          "terminationMessagePath": "/dev/termination-log",
+          "terminationMessagePolicy": "File"
+        }
+      ],
+      "dnsPolicy": "ClusterFirst",
+      "enableServiceLinks": true,
+      "hostname": "pairs-map-2",
+      "nodeName": "itmo-j3312-control-plane",
+      "preemptionPolicy": "PreemptLowerPriority",
+      "priority": 0,
+      "restartPolicy": "Never",
+      "schedulerName": "default-scheduler",
+      "securityContext": {},
+      "serviceAccount": "default",
+      "serviceAccountName": "default",
+      "terminationGracePeriodSeconds": 30,
+      "tolerations": [
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/not-ready",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        },
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/unreachable",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        }
+      ]
+    },
+    "status": {
+      "conditions": [
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:14Z",
+          "observedGeneration": 1,
+          "status": "False",
+          "type": "PodReadyToStartContainers"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:07Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "True",
+          "type": "Initialized"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:13Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "Ready"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:13Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "ContainersReady"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:07Z",
+          "observedGeneration": 1,
+          "status": "True",
+          "type": "PodScheduled"
+        }
+      ],
+      "containerStatuses": [
+        {
+          "allocatedResources": {
+            "cpu": "500m",
+            "memory": "96Mi"
+          },
+          "containerID": "containerd://5f52fbbab458e9ace793be629e59c33cd9e706837d7e5b91cbd9d99aab652bb1",
+          "image": "docker.io/library/skills-1c:lab5",
+          "imageID": "sha256:8a2a3c6c0d6e2744ed7a360b5beb89253468667660d1ab0500976f30f9e4441b",
+          "lastState": {},
+          "name": "pairs",
+          "ready": false,
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "384Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "96Mi"
+            }
+          },
+          "restartCount": 0,
+          "started": false,
+          "state": {
+            "terminated": {
+              "containerID": "containerd://5f52fbbab458e9ace793be629e59c33cd9e706837d7e5b91cbd9d99aab652bb1",
+              "exitCode": 0,
+              "finishedAt": "2026-11-24T18:23:13Z",
+              "reason": "Completed",
+              "startedAt": "2026-11-24T18:23:07Z"
+            }
+          },
+          "user": {
+            "linux": {
+              "gid": 0,
+              "supplementalGroups": [
+                0
+              ],
+              "uid": 65532
+            }
+          }
+        }
+      ],
+      "hostIP": "172.18.0.2",
+      "hostIPs": [
+        {
+          "ip": "172.18.0.2"
+        }
+      ],
+      "observedGeneration": 1,
+      "phase": "Succeeded",
+      "podIP": "10.244.0.16",
+      "podIPs": [
+        {
+          "ip": "10.244.0.16"
+        }
+      ],
+      "qosClass": "Burstable",
+      "startTime": "2026-11-24T18:23:07Z"
+    }
+  },
+  {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+      "annotations": {
+        "batch.kubernetes.io/job-completion-index": "3"
+      },
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "generateName": "pairs-map-3-",
+      "generation": 1,
+      "labels": {
+        "batch.kubernetes.io/controller-uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b",
+        "batch.kubernetes.io/job-completion-index": "3",
+        "batch.kubernetes.io/job-name": "pairs-map",
+        "controller-uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b",
+        "job-name": "pairs-map"
+      },
+      "name": "pairs-map-3-mtxz9",
+      "namespace": "skills-1c",
+      "ownerReferences": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "pairs-map",
+          "uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b"
+        }
+      ],
+      "resourceVersion": "1291",
+      "uid": "58951062-91bf-4f4e-876e-24eea45ee427"
+    },
+    "spec": {
+      "automountServiceAccountToken": false,
+      "containers": [
+        {
+          "args": [
+            "map"
+          ],
+          "env": [
+            {
+              "name": "S3_ENDPOINT",
+              "value": "http://rustfs.skills-1c.svc.cluster.local:9000"
+            },
+            {
+              "name": "JOB_COMPLETION_INDEX",
+              "valueFrom": {
+                "fieldRef": {
+                  "apiVersion": "v1",
+                  "fieldPath": "metadata.labels['batch.kubernetes.io/job-completion-index']"
+                }
+              }
+            }
+          ],
+          "envFrom": [
+            {
+              "secretRef": {
+                "name": "s3-auth"
+              }
+            }
+          ],
+          "image": "skills-1c:lab5",
+          "imagePullPolicy": "Never",
+          "name": "pairs",
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "384Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "96Mi"
+            }
+          },
+          "terminationMessagePath": "/dev/termination-log",
+          "terminationMessagePolicy": "File"
+        }
+      ],
+      "dnsPolicy": "ClusterFirst",
+      "enableServiceLinks": true,
+      "hostname": "pairs-map-3",
+      "nodeName": "itmo-j3312-control-plane",
+      "preemptionPolicy": "PreemptLowerPriority",
+      "priority": 0,
+      "restartPolicy": "Never",
+      "schedulerName": "default-scheduler",
+      "securityContext": {},
+      "serviceAccount": "default",
+      "serviceAccountName": "default",
+      "terminationGracePeriodSeconds": 30,
+      "tolerations": [
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/not-ready",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        },
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/unreachable",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        }
+      ]
+    },
+    "status": {
+      "conditions": [
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:14Z",
+          "observedGeneration": 1,
+          "status": "False",
+          "type": "PodReadyToStartContainers"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:07Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "True",
+          "type": "Initialized"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:13Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "Ready"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:13Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "ContainersReady"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:23:07Z",
+          "observedGeneration": 1,
+          "status": "True",
+          "type": "PodScheduled"
+        }
+      ],
+      "containerStatuses": [
+        {
+          "allocatedResources": {
+            "cpu": "500m",
+            "memory": "96Mi"
+          },
+          "containerID": "containerd://599ae5fc94b255b257e6d2801353a489261a3e7049e619fd37867c894e82dcbc",
+          "image": "docker.io/library/skills-1c:lab5",
+          "imageID": "sha256:8a2a3c6c0d6e2744ed7a360b5beb89253468667660d1ab0500976f30f9e4441b",
+          "lastState": {},
+          "name": "pairs",
+          "ready": false,
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "384Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "96Mi"
+            }
+          },
+          "restartCount": 0,
+          "started": false,
+          "state": {
+            "terminated": {
+              "containerID": "containerd://599ae5fc94b255b257e6d2801353a489261a3e7049e619fd37867c894e82dcbc",
+              "exitCode": 0,
+              "finishedAt": "2026-11-24T18:23:13Z",
+              "reason": "Completed",
+              "startedAt": "2026-11-24T18:23:07Z"
+            }
+          },
+          "user": {
+            "linux": {
+              "gid": 0,
+              "supplementalGroups": [
+                0
+              ],
+              "uid": 65532
+            }
+          }
+        }
+      ],
+      "hostIP": "172.18.0.2",
+      "hostIPs": [
+        {
+          "ip": "172.18.0.2"
+        }
+      ],
+      "observedGeneration": 1,
+      "phase": "Succeeded",
+      "podIP": "10.244.0.18",
+      "podIPs": [
+        {
+          "ip": "10.244.0.18"
+        }
+      ],
+      "qosClass": "Burstable",
+      "startTime": "2026-11-24T18:23:07Z"
+    }
+  }
+]

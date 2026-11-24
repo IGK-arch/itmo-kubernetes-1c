@@ -1,0 +1,65 @@
+$ kubectl -n skills-1c describe pod pairs-profile-rptvj
+Name:             pairs-profile-rptvj
+Namespace:        skills-1c
+Priority:         0
+Service Account:  default
+Node:             itmo-j3312-control-plane/172.18.0.2
+Start Time:       Tue, 24 Nov 2026 21:19:44 +0300
+Labels:           batch.kubernetes.io/controller-uid=cfd408b0-a7e9-4747-a11d-42b6bfddfa3c
+                  batch.kubernetes.io/job-name=pairs-profile
+                  controller-uid=cfd408b0-a7e9-4747-a11d-42b6bfddfa3c
+                  job-name=pairs-profile
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.244.0.7
+IPs:
+  IP:           10.244.0.7
+Controlled By:  Job/pairs-profile
+Containers:
+  pairs:
+    Container ID:  containerd://3d8a4df3006acd2229cb9712e53f4f8cefe9a8ea450cc6f05abf3314549f6e94
+    Image:         skills-1c:lab5
+    Image ID:      sha256:8a2a3c6c0d6e2744ed7a360b5beb89253468667660d1ab0500976f30f9e4441b
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      single
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 24 Nov 2026 21:19:45 +0300
+      Finished:     Tue, 24 Nov 2026 21:20:54 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  768Mi
+    Requests:
+      cpu:        250m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /input/it_vacancies_2024.csv from csv (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  csv:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lab-input/it_vacancies_2024.csv
+    HostPathType:  File
+QoS Class:         Burstable
+Node-Selectors:    <none>
+Tolerations:       node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                   node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  75s   default-scheduler  Successfully assigned skills-1c/pairs-profile-rptvj to itmo-j3312-control-plane
+  Normal  Pulled     75s   kubelet            Container image "skills-1c:lab5" already present on machine
+  Normal  Created    75s   kubelet            Created container: pairs
+  Normal  Started    74s   kubelet            Started container pairs

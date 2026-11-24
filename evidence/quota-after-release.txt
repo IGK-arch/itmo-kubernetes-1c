@@ -1,0 +1,2 @@
+$ kubectl -n skills-quota create -f manifests/quota-second.json
+pod/quota-second created

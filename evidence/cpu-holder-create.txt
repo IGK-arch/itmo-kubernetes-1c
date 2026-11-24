@@ -1,0 +1,2 @@
+$ kubectl -n skills-1c create -f manifests/cpu-holder.json
+job.batch/cpu-holder created

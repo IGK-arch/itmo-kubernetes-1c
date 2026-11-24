@@ -1,0 +1,50 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "pairs-reduce",
+    "namespace": "skills-1c"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "template": {
+      "spec": {
+        "restartPolicy": "Never",
+        "containers": [
+          {
+            "name": "pairs",
+            "image": "skills-1c:lab5",
+            "imagePullPolicy": "Never",
+            "args": [
+              "reduce"
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "64Mi"
+              },
+              "limits": {
+                "cpu": "1",
+                "memory": "256Mi"
+              }
+            },
+            "env": [
+              {
+                "name": "S3_ENDPOINT",
+                "value": "http://rustfs.skills-1c.svc.cluster.local:9000"
+              }
+            ],
+            "envFrom": [
+              {
+                "secretRef": {
+                  "name": "s3-auth"
+                }
+              }
+            ]
+          }
+        ],
+        "automountServiceAccountToken": false
+      }
+    }
+  }
+}

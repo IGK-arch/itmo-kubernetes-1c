@@ -1,0 +1,113 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "creationTimestamp": "2026-11-24T18:19:16Z",
+    "generation": 1,
+    "labels": {
+      "batch.kubernetes.io/controller-uid": "40479ca3-1864-44ce-8a58-8fa16ee8e77b",
+      "batch.kubernetes.io/job-name": "pairs-oom",
+      "controller-uid": "40479ca3-1864-44ce-8a58-8fa16ee8e77b",
+      "job-name": "pairs-oom"
+    },
+    "name": "pairs-oom",
+    "namespace": "skills-1c",
+    "resourceVersion": "787",
+    "uid": "40479ca3-1864-44ce-8a58-8fa16ee8e77b"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "completionMode": "NonIndexed",
+    "completions": 1,
+    "manualSelector": false,
+    "parallelism": 1,
+    "podReplacementPolicy": "TerminatingOrFailed",
+    "selector": {
+      "matchLabels": {
+        "batch.kubernetes.io/controller-uid": "40479ca3-1864-44ce-8a58-8fa16ee8e77b"
+      }
+    },
+    "suspend": false,
+    "template": {
+      "metadata": {
+        "labels": {
+          "batch.kubernetes.io/controller-uid": "40479ca3-1864-44ce-8a58-8fa16ee8e77b",
+          "batch.kubernetes.io/job-name": "pairs-oom",
+          "controller-uid": "40479ca3-1864-44ce-8a58-8fa16ee8e77b",
+          "job-name": "pairs-oom"
+        }
+      },
+      "spec": {
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "args": [
+              "single"
+            ],
+            "image": "skills-1c:lab5",
+            "imagePullPolicy": "Never",
+            "name": "pairs",
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "12Mi"
+              },
+              "requests": {
+                "cpu": "250m",
+                "memory": "8Mi"
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/input/it_vacancies_2024.csv",
+                "name": "csv",
+                "readOnly": true
+              }
+            ]
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30,
+        "volumes": [
+          {
+            "hostPath": {
+              "path": "/lab-input/it_vacancies_2024.csv",
+              "type": "File"
+            },
+            "name": "csv"
+          }
+        ]
+      }
+    }
+  },
+  "status": {
+    "conditions": [
+      {
+        "lastProbeTime": "2026-11-24T18:19:40Z",
+        "lastTransitionTime": "2026-11-24T18:19:40Z",
+        "message": "Job has reached the specified backoff limit",
+        "reason": "BackoffLimitExceeded",
+        "status": "True",
+        "type": "FailureTarget"
+      },
+      {
+        "lastProbeTime": "2026-11-24T18:19:40Z",
+        "lastTransitionTime": "2026-11-24T18:19:40Z",
+        "message": "Job has reached the specified backoff limit",
+        "reason": "BackoffLimitExceeded",
+        "status": "True",
+        "type": "Failed"
+      }
+    ],
+    "failed": 1,
+    "ready": 0,
+    "startTime": "2026-11-24T18:19:16Z",
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  }
+}

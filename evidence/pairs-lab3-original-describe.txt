@@ -1,0 +1,63 @@
+$ kubectl -n skills-1c describe pod pairs-lab3-original-8zz5j
+Name:             pairs-lab3-original-8zz5j
+Namespace:        skills-1c
+Priority:         0
+Service Account:  default
+Node:             itmo-j3312-control-plane/172.18.0.2
+Start Time:       Tue, 24 Nov 2026 21:24:22 +0300
+Labels:           batch.kubernetes.io/controller-uid=e1b856e6-5483-4f88-9125-8d11e90601f0
+                  batch.kubernetes.io/job-name=pairs-lab3-original
+                  controller-uid=e1b856e6-5483-4f88-9125-8d11e90601f0
+                  job-name=pairs-lab3-original
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.244.0.27
+IPs:
+  IP:           10.244.0.27
+Controlled By:  Job/pairs-lab3-original
+Containers:
+  pairs:
+    Container ID:   containerd://bd33f640859a47b8edd8d26f7016d50e8489b9a96af4b1be2ccf04d0b93352f3
+    Image:          skills-1c:original
+    Image ID:       sha256:fdb015a82fe82713c066c2db12dac3dd59de68b5c5b13b35fbe16a17c1621fbd
+    Port:           <none>
+    Host Port:      <none>
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 24 Nov 2026 21:24:23 +0300
+      Finished:     Tue, 24 Nov 2026 21:24:42 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  336Mi
+    Requests:
+      cpu:     500m
+      memory:  192Mi
+    Environment Variables from:
+      s3-auth  Secret  Optional: false
+    Environment:
+      RUSTFS_ENDPOINT_URL:  http://rustfs.skills-1c.svc.cluster.local:9000
+      RUSTFS_ACCESS_KEY:    <set to the key 'AWS_ACCESS_KEY_ID' in secret 's3-auth'>      Optional: false
+      RUSTFS_SECRET_KEY:    <set to the key 'AWS_SECRET_ACCESS_KEY' in secret 's3-auth'>  Optional: false
+    Mounts:                 <none>
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:                      <none>
+QoS Class:                    Burstable
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  27s   default-scheduler  Successfully assigned skills-1c/pairs-lab3-original-8zz5j to itmo-j3312-control-plane
+  Normal  Pulled     26s   kubelet            Container image "skills-1c:original" already present on machine
+  Normal  Created    26s   kubelet            Created container: pairs
+  Normal  Started    26s   kubelet            Started container pairs

@@ -1,0 +1,3 @@
+$ kubectl -n skills-1c get pods -l job-name=pairs-tuned -o wide
+NAME                READY   STATUS      RESTARTS   AGE   IP           NODE                       NOMINATED NODE   READINESS GATES
+pairs-tuned-vjjlc   0/1     Completed   0          50s   10.244.0.8   itmo-j3312-control-plane   <none>           <none>

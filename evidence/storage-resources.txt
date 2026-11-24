@@ -1,0 +1,18 @@
+$ kubectl -n skills-1c get sts,pod,svc,pvc -o wide
+NAME                      READY   AGE   CONTAINERS   IMAGES
+statefulset.apps/rustfs   1/1     11s   rustfs       rustfs/rustfs:1.0.3
+
+NAME                      READY   STATUS      RESTARTS   AGE     IP            NODE                       NOMINATED NODE   READINESS GATES
+pod/pairs-oom-nfc89       0/1     OOMKilled   0          3m      10.244.0.6    itmo-j3312-control-plane   <none>           <none>
+pod/pairs-profile-rptvj   0/1     Completed   0          2m32s   10.244.0.7    itmo-j3312-control-plane   <none>           <none>
+pod/pairs-tuned-vjjlc     0/1     Completed   0          77s     10.244.0.8    itmo-j3312-control-plane   <none>           <none>
+pod/rustfs-0              1/1     Running     0          11s     10.244.0.13   itmo-j3312-control-plane   <none>           <none>
+
+NAME             TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE   SELECTOR
+service/rustfs   ClusterIP   10.96.59.6   <none>        9000/TCP   11s   app=rustfs
+
+NAME                                   STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE   VOLUMEMODE
+persistentvolumeclaim/disk1-rustfs-0   Bound    pvc-bd08a29e-8046-4d04-a73b-98d04c6b8d97   1Gi        RWO            standard       <unset>                 11s   Filesystem
+persistentvolumeclaim/disk2-rustfs-0   Bound    pvc-1d3a36f7-3cfb-474a-a751-bca606a8446d   1Gi        RWO            standard       <unset>                 11s   Filesystem
+persistentvolumeclaim/disk3-rustfs-0   Bound    pvc-a291b96f-021a-4bf7-b92e-e0cbb6b5f8df   1Gi        RWO            standard       <unset>                 11s   Filesystem
+persistentvolumeclaim/disk4-rustfs-0   Bound    pvc-0128b8b8-f9db-4d22-9f97-b82c5948cfae   1Gi        RWO            standard       <unset>                 11s   Filesystem

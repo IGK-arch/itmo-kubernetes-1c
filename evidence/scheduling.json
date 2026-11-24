@@ -1,0 +1,24 @@
+{
+  "allocatable_m": 16000,
+  "initial_requests_m": 1050,
+  "free_m": 14950,
+  "holder_request_m": 14450,
+  "waiting_request_m": 1000,
+  "holder": "cpu-holder-rv5gv",
+  "waiter": "cpu-wait-78jxz",
+  "same_waiter_after_release": true,
+  "failed_scheduling": [
+    "0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod."
+  ],
+  "low": "priority-low-zvpf8",
+  "high": "priority-high-sxw4q",
+  "low_replacement": "priority-low-fm8tn",
+  "eviction": [
+    {
+      "reason": "Preempted",
+      "message": "Preempted by pod 115c6c6c-5f9b-4847-afd1-082a3d83306f on node itmo-j3312-control-plane"
+    }
+  ],
+  "low_priority": 100,
+  "high_priority": 1000
+}

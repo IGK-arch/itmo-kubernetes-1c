@@ -1,0 +1,111 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "creationTimestamp": "2026-11-24T18:22:50Z",
+    "generation": 1,
+    "labels": {
+      "batch.kubernetes.io/controller-uid": "9f2c8a77-a74e-43b0-998d-6d7caa4a34f9",
+      "batch.kubernetes.io/job-name": "pairs-index",
+      "controller-uid": "9f2c8a77-a74e-43b0-998d-6d7caa4a34f9",
+      "job-name": "pairs-index"
+    },
+    "name": "pairs-index",
+    "namespace": "skills-1c",
+    "resourceVersion": "1224",
+    "uid": "9f2c8a77-a74e-43b0-998d-6d7caa4a34f9"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "completionMode": "NonIndexed",
+    "completions": 1,
+    "manualSelector": false,
+    "parallelism": 1,
+    "podReplacementPolicy": "TerminatingOrFailed",
+    "selector": {
+      "matchLabels": {
+        "batch.kubernetes.io/controller-uid": "9f2c8a77-a74e-43b0-998d-6d7caa4a34f9"
+      }
+    },
+    "suspend": false,
+    "template": {
+      "metadata": {
+        "labels": {
+          "batch.kubernetes.io/controller-uid": "9f2c8a77-a74e-43b0-998d-6d7caa4a34f9",
+          "batch.kubernetes.io/job-name": "pairs-index",
+          "controller-uid": "9f2c8a77-a74e-43b0-998d-6d7caa4a34f9",
+          "job-name": "pairs-index"
+        }
+      },
+      "spec": {
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "args": [
+              "index"
+            ],
+            "env": [
+              {
+                "name": "S3_ENDPOINT",
+                "value": "http://rustfs.skills-1c.svc.cluster.local:9000"
+              }
+            ],
+            "envFrom": [
+              {
+                "secretRef": {
+                  "name": "s3-auth"
+                }
+              }
+            ],
+            "image": "skills-1c:lab5",
+            "imagePullPolicy": "Never",
+            "name": "pairs",
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "256Mi"
+              },
+              "requests": {
+                "cpu": "250m",
+                "memory": "64Mi"
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File"
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30
+      }
+    }
+  },
+  "status": {
+    "completionTime": "2026-11-24T18:23:04Z",
+    "conditions": [
+      {
+        "lastProbeTime": "2026-11-24T18:23:04Z",
+        "lastTransitionTime": "2026-11-24T18:23:04Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "SuccessCriteriaMet"
+      },
+      {
+        "lastProbeTime": "2026-11-24T18:23:04Z",
+        "lastTransitionTime": "2026-11-24T18:23:04Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "Complete"
+      }
+    ],
+    "ready": 0,
+    "startTime": "2026-11-24T18:22:50Z",
+    "succeeded": 1,
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  }
+}

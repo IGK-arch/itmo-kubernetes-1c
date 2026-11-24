@@ -1,0 +1,3865 @@
+[
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:31Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "cpu-holder-rv5gv",
+      "namespace": "skills-1c",
+      "resourceVersion": "1340",
+      "uid": "64e4b84e-76ea-41b2-9b89-90c6d37826f2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:31Z",
+    "message": "Successfully assigned skills-1c/cpu-holder-rv5gv to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:31Z",
+      "name": "cpu-holder-rv5gv.18eb0e4fb0ec0089",
+      "namespace": "skills-1c",
+      "resourceVersion": "1344",
+      "uid": "edfbb3c9-17ff-4b42-aaa0-0440788aed5c"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:32Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "cpu-holder-rv5gv",
+      "namespace": "skills-1c",
+      "resourceVersion": "1342",
+      "uid": "64e4b84e-76ea-41b2-9b89-90c6d37826f2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:32Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:32Z",
+      "name": "cpu-holder-rv5gv.18eb0e4fbe84b032",
+      "namespace": "skills-1c",
+      "resourceVersion": "1346",
+      "uid": "9d4e40d6-36f8-4cad-aeb4-7df24f1a7e6f"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:32Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "cpu-holder-rv5gv",
+      "namespace": "skills-1c",
+      "resourceVersion": "1342",
+      "uid": "64e4b84e-76ea-41b2-9b89-90c6d37826f2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:32Z",
+    "message": "Created container: hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:32Z",
+      "name": "cpu-holder-rv5gv.18eb0e4fc0ab4538",
+      "namespace": "skills-1c",
+      "resourceVersion": "1347",
+      "uid": "f4a29c4c-c231-45fb-86d9-b8fe044cb818"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:32Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "cpu-holder-rv5gv",
+      "namespace": "skills-1c",
+      "resourceVersion": "1342",
+      "uid": "64e4b84e-76ea-41b2-9b89-90c6d37826f2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:32Z",
+    "message": "Started container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:32Z",
+      "name": "cpu-holder-rv5gv.18eb0e4fc983c1d5",
+      "namespace": "skills-1c",
+      "resourceVersion": "1348",
+      "uid": "76527a29-811d-4970-a978-14e5594a9ccb"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:36Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "cpu-holder-rv5gv",
+      "namespace": "skills-1c",
+      "resourceVersion": "1342",
+      "uid": "64e4b84e-76ea-41b2-9b89-90c6d37826f2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:36Z",
+    "message": "Stopping container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:36Z",
+      "name": "cpu-holder-rv5gv.18eb0e50a8dbe454",
+      "namespace": "skills-1c",
+      "resourceVersion": "1364",
+      "uid": "f370df89-60cd-4bc5-a680-799d1241bed5"
+    },
+    "reason": "Killing",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:31Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "cpu-holder",
+      "namespace": "skills-1c",
+      "resourceVersion": "1339",
+      "uid": "2499e879-8f46-4d5e-b7bc-1bdd03c2edf0"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:31Z",
+    "message": "Created pod: cpu-holder-rv5gv",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:31Z",
+      "name": "cpu-holder.18eb0e4fb061408e",
+      "namespace": "skills-1c",
+      "resourceVersion": "1341",
+      "uid": "1af02675-c622-456b-a344-2730a649a193"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:34Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "cpu-wait-78jxz",
+      "namespace": "skills-1c",
+      "resourceVersion": "1354",
+      "uid": "fa81bb64-5f8d-4f8f-832b-9b8091d8f371"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:34Z",
+    "message": "0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:34Z",
+      "name": "cpu-wait-78jxz.18eb0e503146ce1d",
+      "namespace": "skills-1c",
+      "resourceVersion": "1356",
+      "uid": "d79ef6b9-637a-4a00-bbd7-0c3a8cd2954c"
+    },
+    "reason": "FailedScheduling",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Warning"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:38Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "cpu-wait-78jxz",
+      "namespace": "skills-1c",
+      "resourceVersion": "1358",
+      "uid": "fa81bb64-5f8d-4f8f-832b-9b8091d8f371"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:38Z",
+    "message": "Successfully assigned skills-1c/cpu-wait-78jxz to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:38Z",
+      "name": "cpu-wait-78jxz.18eb0e512c58ea09",
+      "namespace": "skills-1c",
+      "resourceVersion": "1372",
+      "uid": "0de742b5-f2ed-435b-b186-b1240d64bd03"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:38Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "cpu-wait-78jxz",
+      "namespace": "skills-1c",
+      "resourceVersion": "1371",
+      "uid": "fa81bb64-5f8d-4f8f-832b-9b8091d8f371"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:38Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:38Z",
+      "name": "cpu-wait-78jxz.18eb0e5137386aaf",
+      "namespace": "skills-1c",
+      "resourceVersion": "1374",
+      "uid": "884456d9-8697-4151-84a2-c82817b26581"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:38Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "cpu-wait-78jxz",
+      "namespace": "skills-1c",
+      "resourceVersion": "1371",
+      "uid": "fa81bb64-5f8d-4f8f-832b-9b8091d8f371"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:38Z",
+    "message": "Created container: hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:38Z",
+      "name": "cpu-wait-78jxz.18eb0e5138fe4191",
+      "namespace": "skills-1c",
+      "resourceVersion": "1375",
+      "uid": "41d6011f-3a8d-42f3-9b6b-b719455fca66"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:38Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "cpu-wait-78jxz",
+      "namespace": "skills-1c",
+      "resourceVersion": "1371",
+      "uid": "fa81bb64-5f8d-4f8f-832b-9b8091d8f371"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:38Z",
+    "message": "Started container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:38Z",
+      "name": "cpu-wait-78jxz.18eb0e51403ce53e",
+      "namespace": "skills-1c",
+      "resourceVersion": "1376",
+      "uid": "031d05d2-3dda-4953-9239-d8a40981e0b3"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:40Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "cpu-wait-78jxz",
+      "namespace": "skills-1c",
+      "resourceVersion": "1371",
+      "uid": "fa81bb64-5f8d-4f8f-832b-9b8091d8f371"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:40Z",
+    "message": "Stopping container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:40Z",
+      "name": "cpu-wait-78jxz.18eb0e519a98c759",
+      "namespace": "skills-1c",
+      "resourceVersion": "1389",
+      "uid": "629a9691-bd21-4312-bf0b-c2593b8add36"
+    },
+    "reason": "Killing",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:34Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "cpu-wait",
+      "namespace": "skills-1c",
+      "resourceVersion": "1353",
+      "uid": "732d93a0-2703-4630-9296-c25764b46752"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:34Z",
+    "message": "Created pod: cpu-wait-78jxz",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:34Z",
+      "name": "cpu-wait.18eb0e50313c6878",
+      "namespace": "skills-1c",
+      "resourceVersion": "1355",
+      "uid": "a39177e6-5761-41d0-a621-c4cf1211ecd8"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk1-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1028",
+      "uid": "bd08a29e-8046-4d04-a73b-98d04c6b8d97"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "waiting for first consumer to be created before binding",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk1-rustfs-0.18eb0e3b8ce77bec",
+      "namespace": "skills-1c",
+      "resourceVersion": "1032",
+      "uid": "3af70a5a-196a-477c-8276-a73e13c1d0f5"
+    },
+    "reason": "WaitForFirstConsumer",
+    "reportingComponent": "persistentvolume-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "persistentvolume-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 2,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk1-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1044",
+      "uid": "bd08a29e-8046-4d04-a73b-98d04c6b8d97"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk1-rustfs-0.18eb0e3b8fde7974",
+      "namespace": "skills-1c",
+      "resourceVersion": "1053",
+      "uid": "3892aeb0-3923-46e0-92bc-f614c8e7d433"
+    },
+    "reason": "ExternalProvisioning",
+    "reportingComponent": "persistentvolume-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "persistentvolume-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk1-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1044",
+      "uid": "bd08a29e-8046-4d04-a73b-98d04c6b8d97"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "External provisioner is provisioning volume for claim \"skills-1c/disk1-rustfs-0\"",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk1-rustfs-0.18eb0e3b906ad9c1",
+      "namespace": "skills-1c",
+      "resourceVersion": "1049",
+      "uid": "c575ee90-0333-4f93-90bb-37a8e73a5f12"
+    },
+    "reason": "Provisioning",
+    "reportingComponent": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef",
+    "reportingInstance": "",
+    "source": {
+      "component": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:10Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk1-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1044",
+      "uid": "bd08a29e-8046-4d04-a73b-98d04c6b8d97"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:10Z",
+    "message": "Successfully provisioned volume pvc-bd08a29e-8046-4d04-a73b-98d04c6b8d97",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:10Z",
+      "name": "disk1-rustfs-0.18eb0e3cba86c1ee",
+      "namespace": "skills-1c",
+      "resourceVersion": "1119",
+      "uid": "71b4e5fa-869d-4ad4-9227-2e30cbec41c5"
+    },
+    "reason": "ProvisioningSucceeded",
+    "reportingComponent": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef",
+    "reportingInstance": "",
+    "source": {
+      "component": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk2-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1029",
+      "uid": "1d3a36f7-3cfb-474a-a751-bca606a8446d"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "waiting for first consumer to be created before binding",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk2-rustfs-0.18eb0e3b8d48a9a0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1036",
+      "uid": "3f34c68b-3bbe-489c-8dea-7abc7397f1bd"
+    },
+    "reason": "WaitForFirstConsumer",
+    "reportingComponent": "persistentvolume-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "persistentvolume-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 2,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk2-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1047",
+      "uid": "1d3a36f7-3cfb-474a-a751-bca606a8446d"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk2-rustfs-0.18eb0e3b9068b646",
+      "namespace": "skills-1c",
+      "resourceVersion": "1058",
+      "uid": "28fde648-3b98-4fe4-bcca-8184715560ec"
+    },
+    "reason": "ExternalProvisioning",
+    "reportingComponent": "persistentvolume-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "persistentvolume-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk2-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1047",
+      "uid": "1d3a36f7-3cfb-474a-a751-bca606a8446d"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "External provisioner is provisioning volume for claim \"skills-1c/disk2-rustfs-0\"",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk2-rustfs-0.18eb0e3b91162244",
+      "namespace": "skills-1c",
+      "resourceVersion": "1052",
+      "uid": "8d1f83a1-2d32-469a-97c6-06d903491fd2"
+    },
+    "reason": "Provisioning",
+    "reportingComponent": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef",
+    "reportingInstance": "",
+    "source": {
+      "component": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:09Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk2-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1047",
+      "uid": "1d3a36f7-3cfb-474a-a751-bca606a8446d"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:09Z",
+    "message": "Successfully provisioned volume pvc-1d3a36f7-3cfb-474a-a751-bca606a8446d",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:10Z",
+      "name": "disk2-rustfs-0.18eb0e3c8a99d69f",
+      "namespace": "skills-1c",
+      "resourceVersion": "1112",
+      "uid": "b3c3bdff-56f6-4559-a873-34a6b048e581"
+    },
+    "reason": "ProvisioningSucceeded",
+    "reportingComponent": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef",
+    "reportingInstance": "",
+    "source": {
+      "component": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk3-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1031",
+      "uid": "a291b96f-021a-4bf7-b92e-e0cbb6b5f8df"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "waiting for first consumer to be created before binding",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk3-rustfs-0.18eb0e3b8db22da5",
+      "namespace": "skills-1c",
+      "resourceVersion": "1038",
+      "uid": "c1985eba-b860-4a85-94a3-df3dfc6d0ebe"
+    },
+    "reason": "WaitForFirstConsumer",
+    "reportingComponent": "persistentvolume-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "persistentvolume-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk3-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1051",
+      "uid": "a291b96f-021a-4bf7-b92e-e0cbb6b5f8df"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk3-rustfs-0.18eb0e3b91a95aec",
+      "namespace": "skills-1c",
+      "resourceVersion": "1062",
+      "uid": "a2bcc8f4-a279-452e-9419-64a4f38760b0"
+    },
+    "reason": "ExternalProvisioning",
+    "reportingComponent": "persistentvolume-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "persistentvolume-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk3-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1051",
+      "uid": "a291b96f-021a-4bf7-b92e-e0cbb6b5f8df"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "External provisioner is provisioning volume for claim \"skills-1c/disk3-rustfs-0\"",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk3-rustfs-0.18eb0e3b9212d8ea",
+      "namespace": "skills-1c",
+      "resourceVersion": "1057",
+      "uid": "041a0944-e9b9-4eab-9a53-572fa697653f"
+    },
+    "reason": "Provisioning",
+    "reportingComponent": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef",
+    "reportingInstance": "",
+    "source": {
+      "component": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:11Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk3-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1051",
+      "uid": "a291b96f-021a-4bf7-b92e-e0cbb6b5f8df"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:11Z",
+    "message": "Successfully provisioned volume pvc-a291b96f-021a-4bf7-b92e-e0cbb6b5f8df",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:11Z",
+      "name": "disk3-rustfs-0.18eb0e3cde143e5c",
+      "namespace": "skills-1c",
+      "resourceVersion": "1125",
+      "uid": "13f4a2c5-c8d2-4826-a69b-81f927e0b3d9"
+    },
+    "reason": "ProvisioningSucceeded",
+    "reportingComponent": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef",
+    "reportingInstance": "",
+    "source": {
+      "component": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk4-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1034",
+      "uid": "0128b8b8-f9db-4d22-9f97-b82c5948cfae"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "waiting for first consumer to be created before binding",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk4-rustfs-0.18eb0e3b8e1c0fc9",
+      "namespace": "skills-1c",
+      "resourceVersion": "1040",
+      "uid": "930523cc-7cb7-4007-a348-2bd6bcaf798b"
+    },
+    "reason": "WaitForFirstConsumer",
+    "reportingComponent": "persistentvolume-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "persistentvolume-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk4-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1055",
+      "uid": "0128b8b8-f9db-4d22-9f97-b82c5948cfae"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk4-rustfs-0.18eb0e3b920962c5",
+      "namespace": "skills-1c",
+      "resourceVersion": "1063",
+      "uid": "c616f95c-f04e-48ff-9aa2-21149a444930"
+    },
+    "reason": "ExternalProvisioning",
+    "reportingComponent": "persistentvolume-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "persistentvolume-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk4-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1055",
+      "uid": "0128b8b8-f9db-4d22-9f97-b82c5948cfae"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "External provisioner is provisioning volume for claim \"skills-1c/disk4-rustfs-0\"",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "disk4-rustfs-0.18eb0e3b92531655",
+      "namespace": "skills-1c",
+      "resourceVersion": "1069",
+      "uid": "4aa22874-cb86-4f03-ae7a-c3105d6638ad"
+    },
+    "reason": "Provisioning",
+    "reportingComponent": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef",
+    "reportingInstance": "",
+    "source": {
+      "component": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:08Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "PersistentVolumeClaim",
+      "name": "disk4-rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1055",
+      "uid": "0128b8b8-f9db-4d22-9f97-b82c5948cfae"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:08Z",
+    "message": "Successfully provisioned volume pvc-0128b8b8-f9db-4d22-9f97-b82c5948cfae",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:08Z",
+      "name": "disk4-rustfs-0.18eb0e3c515897e9",
+      "namespace": "skills-1c",
+      "resourceVersion": "1100",
+      "uid": "b40c9d44-9264-4c38-94d2-f88836ff93dc"
+    },
+    "reason": "ProvisioningSucceeded",
+    "reportingComponent": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef",
+    "reportingInstance": "",
+    "source": {
+      "component": "rancher.io/local-path_local-path-provisioner-7b8c8ddbd6-xz8gh_a0665389-a9cf-4217-89e9-eb3fc95a4aef"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:50Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-index-dgzpx",
+      "namespace": "skills-1c",
+      "resourceVersion": "1191",
+      "uid": "e1cfc42c-74de-4caa-824c-558ef59e6e25"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:50Z",
+    "message": "Successfully assigned skills-1c/pairs-index-dgzpx to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:50Z",
+      "name": "pairs-index-dgzpx.18eb0e462395f9dd",
+      "namespace": "skills-1c",
+      "resourceVersion": "1195",
+      "uid": "85fd4b73-30a5-4abe-9b2a-7b5519bcdf9a"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:51Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-index-dgzpx",
+      "namespace": "skills-1c",
+      "resourceVersion": "1192",
+      "uid": "e1cfc42c-74de-4caa-824c-558ef59e6e25"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:51Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:51Z",
+      "name": "pairs-index-dgzpx.18eb0e462f558357",
+      "namespace": "skills-1c",
+      "resourceVersion": "1197",
+      "uid": "43a5af23-42eb-4a04-879e-8db514e56db6"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:51Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-index-dgzpx",
+      "namespace": "skills-1c",
+      "resourceVersion": "1192",
+      "uid": "e1cfc42c-74de-4caa-824c-558ef59e6e25"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:51Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:51Z",
+      "name": "pairs-index-dgzpx.18eb0e4631487924",
+      "namespace": "skills-1c",
+      "resourceVersion": "1198",
+      "uid": "b8f9e0f7-cdc8-4f33-bf52-0ecd70ec24ea"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:51Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-index-dgzpx",
+      "namespace": "skills-1c",
+      "resourceVersion": "1192",
+      "uid": "e1cfc42c-74de-4caa-824c-558ef59e6e25"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:51Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:51Z",
+      "name": "pairs-index-dgzpx.18eb0e4638875e06",
+      "namespace": "skills-1c",
+      "resourceVersion": "1200",
+      "uid": "f2671ce3-9c1c-4735-b4fc-c217b86e84bd"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:50Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-index",
+      "namespace": "skills-1c",
+      "resourceVersion": "1190",
+      "uid": "9f2c8a77-a74e-43b0-998d-6d7caa4a34f9"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:50Z",
+    "message": "Created pod: pairs-index-dgzpx",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:50Z",
+      "name": "pairs-index.18eb0e46230ba693",
+      "namespace": "skills-1c",
+      "resourceVersion": "1193",
+      "uid": "14670e5a-4510-4c37-9219-fa7a1025643f"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:04Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-index",
+      "namespace": "skills-1c",
+      "resourceVersion": "1222",
+      "uid": "9f2c8a77-a74e-43b0-998d-6d7caa4a34f9"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:04Z",
+    "message": "Job completed",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:04Z",
+      "name": "pairs-index.18eb0e495d90f57d",
+      "namespace": "skills-1c",
+      "resourceVersion": "1225",
+      "uid": "375bbf4b-09ac-41e5-9595-234d7b385884"
+    },
+    "reason": "Completed",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:22Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-lab3-original-8zz5j",
+      "namespace": "skills-1c",
+      "resourceVersion": "1557",
+      "uid": "6e100db1-42d2-48ea-82c0-06275b7bad12"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:22Z",
+    "message": "Successfully assigned skills-1c/pairs-lab3-original-8zz5j to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:22Z",
+      "name": "pairs-lab3-original-8zz5j.18eb0e5b97b66ca2",
+      "namespace": "skills-1c",
+      "resourceVersion": "1561",
+      "uid": "4cd8d4b5-fa4e-45e6-97f5-bfed90408c45"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:23Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-lab3-original-8zz5j",
+      "namespace": "skills-1c",
+      "resourceVersion": "1558",
+      "uid": "6e100db1-42d2-48ea-82c0-06275b7bad12"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:23Z",
+    "message": "Container image \"skills-1c:original\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:23Z",
+      "name": "pairs-lab3-original-8zz5j.18eb0e5ba6a96b0e",
+      "namespace": "skills-1c",
+      "resourceVersion": "1566",
+      "uid": "d892cb85-e0a4-4ce8-80e4-c8ca18723e67"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:23Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-lab3-original-8zz5j",
+      "namespace": "skills-1c",
+      "resourceVersion": "1558",
+      "uid": "6e100db1-42d2-48ea-82c0-06275b7bad12"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:23Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:23Z",
+      "name": "pairs-lab3-original-8zz5j.18eb0e5ba97cb5b0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1567",
+      "uid": "472c217f-56d3-4120-8261-9e01cc2df0f1"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:23Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-lab3-original-8zz5j",
+      "namespace": "skills-1c",
+      "resourceVersion": "1558",
+      "uid": "6e100db1-42d2-48ea-82c0-06275b7bad12"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:23Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:23Z",
+      "name": "pairs-lab3-original-8zz5j.18eb0e5bb371f817",
+      "namespace": "skills-1c",
+      "resourceVersion": "1568",
+      "uid": "4a455e3c-141b-491a-8758-d23687d4fbf6"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:22Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-lab3-original",
+      "namespace": "skills-1c",
+      "resourceVersion": "1556",
+      "uid": "e1b856e6-5483-4f88-9125-8d11e90601f0"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:22Z",
+    "message": "Created pod: pairs-lab3-original-8zz5j",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:22Z",
+      "name": "pairs-lab3-original.18eb0e5b9762dc80",
+      "namespace": "skills-1c",
+      "resourceVersion": "1559",
+      "uid": "0bb2f3fd-99da-4000-883b-5f138cf45d1c"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:24:44Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-lab3-original",
+      "namespace": "skills-1c",
+      "resourceVersion": "1603",
+      "uid": "e1b856e6-5483-4f88-9125-8d11e90601f0"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:24:44Z",
+    "message": "Job completed",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:44Z",
+      "name": "pairs-lab3-original.18eb0e60ac9ba4f6",
+      "namespace": "skills-1c",
+      "resourceVersion": "1606",
+      "uid": "c92fd0d1-5f91-4a06-bda3-f76141948c70"
+    },
+    "reason": "Completed",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-map-0-gb4v8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1232",
+      "uid": "f750d110-b16e-4efc-b5cb-bac0e106d85d"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Successfully assigned skills-1c/pairs-map-0-gb4v8 to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-0-gb4v8.18eb0e49f9598842",
+      "namespace": "skills-1c",
+      "resourceVersion": "1237",
+      "uid": "ca5196f9-d0a8-4d4c-b85f-1f39724d5a51"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-0-gb4v8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1233",
+      "uid": "f750d110-b16e-4efc-b5cb-bac0e106d85d"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-0-gb4v8.18eb0e4a08e6e704",
+      "namespace": "skills-1c",
+      "resourceVersion": "1253",
+      "uid": "f4d9f0f6-81b8-43fe-ba2f-931ae291c6dc"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-0-gb4v8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1233",
+      "uid": "f750d110-b16e-4efc-b5cb-bac0e106d85d"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-0-gb4v8.18eb0e4a0bf3dece",
+      "namespace": "skills-1c",
+      "resourceVersion": "1256",
+      "uid": "9ee69e9b-2d06-49ee-9694-38a77b2af003"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-0-gb4v8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1233",
+      "uid": "f750d110-b16e-4efc-b5cb-bac0e106d85d"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-0-gb4v8.18eb0e4a154320b1",
+      "namespace": "skills-1c",
+      "resourceVersion": "1261",
+      "uid": "0c092bdf-79bf-4d0a-9dc5-211dfc62c194"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-map-1-hnfrk",
+      "namespace": "skills-1c",
+      "resourceVersion": "1234",
+      "uid": "14b64c45-2914-4afd-bde6-45ce71642726"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Successfully assigned skills-1c/pairs-map-1-hnfrk to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-1-hnfrk.18eb0e49fa3b56c6",
+      "namespace": "skills-1c",
+      "resourceVersion": "1246",
+      "uid": "a779bbc2-4dab-4b51-a66e-307c42aa90ad"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-1-hnfrk",
+      "namespace": "skills-1c",
+      "resourceVersion": "1241",
+      "uid": "14b64c45-2914-4afd-bde6-45ce71642726"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-1-hnfrk.18eb0e4a0afebec2",
+      "namespace": "skills-1c",
+      "resourceVersion": "1255",
+      "uid": "021fe0b3-9d16-40dd-9d10-8deae638bf22"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-1-hnfrk",
+      "namespace": "skills-1c",
+      "resourceVersion": "1241",
+      "uid": "14b64c45-2914-4afd-bde6-45ce71642726"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-1-hnfrk.18eb0e4a0e24aedb",
+      "namespace": "skills-1c",
+      "resourceVersion": "1259",
+      "uid": "b0f4abf4-5903-47da-86ab-c8cdd72f50dd"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-1-hnfrk",
+      "namespace": "skills-1c",
+      "resourceVersion": "1241",
+      "uid": "14b64c45-2914-4afd-bde6-45ce71642726"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-1-hnfrk.18eb0e4a17861756",
+      "namespace": "skills-1c",
+      "resourceVersion": "1263",
+      "uid": "beb618b7-c8d1-4e3b-be54-d6d45128ad01"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-map-2-jsnfk",
+      "namespace": "skills-1c",
+      "resourceVersion": "1235",
+      "uid": "192f874c-859e-4931-ab89-b473817bb0be"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Successfully assigned skills-1c/pairs-map-2-jsnfk to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-2-jsnfk.18eb0e49fa3f84ef",
+      "namespace": "skills-1c",
+      "resourceVersion": "1248",
+      "uid": "7d2dd10b-61c6-435a-a8a6-688ec3b08ad6"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-2-jsnfk",
+      "namespace": "skills-1c",
+      "resourceVersion": "1239",
+      "uid": "192f874c-859e-4931-ab89-b473817bb0be"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-2-jsnfk.18eb0e4a0ab4bfe4",
+      "namespace": "skills-1c",
+      "resourceVersion": "1254",
+      "uid": "3988cc6e-0fea-44b9-a0e8-9cc29ce09d9e"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-2-jsnfk",
+      "namespace": "skills-1c",
+      "resourceVersion": "1239",
+      "uid": "192f874c-859e-4931-ab89-b473817bb0be"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-2-jsnfk.18eb0e4a0db5c24d",
+      "namespace": "skills-1c",
+      "resourceVersion": "1258",
+      "uid": "cc2736bd-1db8-454b-814b-65fd93cbad5b"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-2-jsnfk",
+      "namespace": "skills-1c",
+      "resourceVersion": "1239",
+      "uid": "192f874c-859e-4931-ab89-b473817bb0be"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-2-jsnfk.18eb0e4a16e105b3",
+      "namespace": "skills-1c",
+      "resourceVersion": "1262",
+      "uid": "7e193c74-3b51-45fc-be54-adca0ba5dd06"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-map-3-mtxz9",
+      "namespace": "skills-1c",
+      "resourceVersion": "1240",
+      "uid": "58951062-91bf-4f4e-876e-24eea45ee427"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Successfully assigned skills-1c/pairs-map-3-mtxz9 to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-3-mtxz9.18eb0e49fb239914",
+      "namespace": "skills-1c",
+      "resourceVersion": "1250",
+      "uid": "a38c468c-d84e-4d47-bcf9-a937983f9d2c"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-3-mtxz9",
+      "namespace": "skills-1c",
+      "resourceVersion": "1244",
+      "uid": "58951062-91bf-4f4e-876e-24eea45ee427"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-3-mtxz9.18eb0e4a0c21f35c",
+      "namespace": "skills-1c",
+      "resourceVersion": "1257",
+      "uid": "ae9816a6-7a6e-4d7e-8dba-866888e92f63"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-3-mtxz9",
+      "namespace": "skills-1c",
+      "resourceVersion": "1244",
+      "uid": "58951062-91bf-4f4e-876e-24eea45ee427"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-3-mtxz9.18eb0e4a0f242279",
+      "namespace": "skills-1c",
+      "resourceVersion": "1260",
+      "uid": "69b4742c-3f80-44cb-af2b-c964eff9266d"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-map-3-mtxz9",
+      "namespace": "skills-1c",
+      "resourceVersion": "1244",
+      "uid": "58951062-91bf-4f4e-876e-24eea45ee427"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map-3-mtxz9.18eb0e4a17fd3973",
+      "namespace": "skills-1c",
+      "resourceVersion": "1264",
+      "uid": "6d4c5ec8-80dd-4eea-9263-b550707d6754"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-map",
+      "namespace": "skills-1c",
+      "resourceVersion": "1231",
+      "uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Created pod: pairs-map-0-gb4v8",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map.18eb0e49f8f62776",
+      "namespace": "skills-1c",
+      "resourceVersion": "1236",
+      "uid": "69233ccd-9bce-4f9c-b1f6-4fdbe77345da"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-map",
+      "namespace": "skills-1c",
+      "resourceVersion": "1231",
+      "uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Created pod: pairs-map-2-jsnfk",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map.18eb0e49f98ca79e",
+      "namespace": "skills-1c",
+      "resourceVersion": "1238",
+      "uid": "5be0280d-e316-4f5c-b85a-934fad9bdfdd"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-map",
+      "namespace": "skills-1c",
+      "resourceVersion": "1231",
+      "uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Created pod: pairs-map-1-hnfrk",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map.18eb0e49f9924729",
+      "namespace": "skills-1c",
+      "resourceVersion": "1243",
+      "uid": "fb3f4a1b-d928-440b-b8be-880db5514ca1"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:07Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-map",
+      "namespace": "skills-1c",
+      "resourceVersion": "1231",
+      "uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:07Z",
+    "message": "Created pod: pairs-map-3-mtxz9",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:07Z",
+      "name": "pairs-map.18eb0e49fa432bab",
+      "namespace": "skills-1c",
+      "resourceVersion": "1247",
+      "uid": "e5e6159f-f787-48f9-be6d-bd15715cce9f"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:15Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-map",
+      "namespace": "skills-1c",
+      "resourceVersion": "1290",
+      "uid": "5e7e9a7a-3971-4697-88bc-4564a9ff3b1b"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:15Z",
+    "message": "Job completed",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:15Z",
+      "name": "pairs-map.18eb0e4bf23416a1",
+      "namespace": "skills-1c",
+      "resourceVersion": "1296",
+      "uid": "2d3c6a68-afa9-42f4-8a58-cb24d96829e8"
+    },
+    "reason": "Completed",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:16:27Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-oom-gw8q7",
+      "namespace": "skills-1c",
+      "resourceVersion": "495",
+      "uid": "8bbf385a-b506-41da-b93c-688e2b0c13d9"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:16:27Z",
+    "message": "Successfully assigned skills-1c/pairs-oom-gw8q7 to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:16:27Z",
+      "name": "pairs-oom-gw8q7.18eb0decddefb1e3",
+      "namespace": "skills-1c",
+      "resourceVersion": "499",
+      "uid": "5e9713e9-9f10-4058-8685-af547f46493a"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:16:27Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-oom-gw8q7",
+      "namespace": "skills-1c",
+      "resourceVersion": "497",
+      "uid": "8bbf385a-b506-41da-b93c-688e2b0c13d9"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:16:27Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:16:27Z",
+      "name": "pairs-oom-gw8q7.18eb0decfea87d41",
+      "namespace": "skills-1c",
+      "resourceVersion": "501",
+      "uid": "d1e6456c-8743-41d1-b6a1-694ff07df766"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:16:28Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-oom-gw8q7",
+      "namespace": "skills-1c",
+      "resourceVersion": "497",
+      "uid": "8bbf385a-b506-41da-b93c-688e2b0c13d9"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:16:28Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:16:28Z",
+      "name": "pairs-oom-gw8q7.18eb0ded0115a5ff",
+      "namespace": "skills-1c",
+      "resourceVersion": "502",
+      "uid": "14d9e36a-8c26-4f00-9255-276f7a6c5d09"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:16:28Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-oom-gw8q7",
+      "namespace": "skills-1c",
+      "resourceVersion": "497",
+      "uid": "8bbf385a-b506-41da-b93c-688e2b0c13d9"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:16:28Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:16:28Z",
+      "name": "pairs-oom-gw8q7.18eb0ded09af9131",
+      "namespace": "skills-1c",
+      "resourceVersion": "503",
+      "uid": "51f1059e-b2ad-449a-92e4-6f08f8b8ad18"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:16Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-oom-nfc89",
+      "namespace": "skills-1c",
+      "resourceVersion": "741",
+      "uid": "ce37cf41-8013-4ed5-ba51-4ae26ff502d2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:16Z",
+    "message": "Successfully assigned skills-1c/pairs-oom-nfc89 to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:16Z",
+      "name": "pairs-oom-nfc89.18eb0e144f165ed2",
+      "namespace": "skills-1c",
+      "resourceVersion": "745",
+      "uid": "194e4b3f-2300-45da-a32f-2ea331b1304c"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:17Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-oom-nfc89",
+      "namespace": "skills-1c",
+      "resourceVersion": "742",
+      "uid": "ce37cf41-8013-4ed5-ba51-4ae26ff502d2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:17Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:17Z",
+      "name": "pairs-oom-nfc89.18eb0e146f833e1e",
+      "namespace": "skills-1c",
+      "resourceVersion": "747",
+      "uid": "aef56a55-bab1-423b-a8fa-2336ec831723"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:17Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-oom-nfc89",
+      "namespace": "skills-1c",
+      "resourceVersion": "742",
+      "uid": "ce37cf41-8013-4ed5-ba51-4ae26ff502d2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:17Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:17Z",
+      "name": "pairs-oom-nfc89.18eb0e147204022c",
+      "namespace": "skills-1c",
+      "resourceVersion": "748",
+      "uid": "6666db82-d705-485a-9e6f-c003f421e6b9"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:17Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-oom-nfc89",
+      "namespace": "skills-1c",
+      "resourceVersion": "742",
+      "uid": "ce37cf41-8013-4ed5-ba51-4ae26ff502d2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:17Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:17Z",
+      "name": "pairs-oom-nfc89.18eb0e147a1afb2c",
+      "namespace": "skills-1c",
+      "resourceVersion": "749",
+      "uid": "60a864f1-55e7-44d4-9a1d-f6ec4369be69"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:16:27Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-oom",
+      "namespace": "skills-1c",
+      "resourceVersion": "494",
+      "uid": "705a702b-f9ca-4f71-ad90-687940ee8f3f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:16:27Z",
+    "message": "Created pod: pairs-oom-gw8q7",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:16:27Z",
+      "name": "pairs-oom.18eb0decdd4796d5",
+      "namespace": "skills-1c",
+      "resourceVersion": "496",
+      "uid": "d2c31e3a-aedc-406c-9ecb-50fb76471e45"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:18:08Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-oom",
+      "namespace": "skills-1c",
+      "resourceVersion": "640",
+      "uid": "705a702b-f9ca-4f71-ad90-687940ee8f3f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:18:08Z",
+    "message": "Job completed",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:18:08Z",
+      "name": "pairs-oom.18eb0e044cfdd6bb",
+      "namespace": "skills-1c",
+      "resourceVersion": "643",
+      "uid": "aa5e2ab8-5ae6-41f0-8426-3a3a1bae7f33"
+    },
+    "reason": "Completed",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:16Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-oom",
+      "namespace": "skills-1c",
+      "resourceVersion": "740",
+      "uid": "40479ca3-1864-44ce-8a58-8fa16ee8e77b"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:16Z",
+    "message": "Created pod: pairs-oom-nfc89",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:16Z",
+      "name": "pairs-oom.18eb0e144e3ec22b",
+      "namespace": "skills-1c",
+      "resourceVersion": "744",
+      "uid": "4c98f921-6543-4e99-8b90-c51a16579398"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:40Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-oom",
+      "namespace": "skills-1c",
+      "resourceVersion": "785",
+      "uid": "40479ca3-1864-44ce-8a58-8fa16ee8e77b"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:40Z",
+    "message": "Job has reached the specified backoff limit",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:40Z",
+      "name": "pairs-oom.18eb0e19ca7758ba",
+      "namespace": "skills-1c",
+      "resourceVersion": "788",
+      "uid": "dd9847a8-69ca-4c2b-859e-22d51d319157"
+    },
+    "reason": "BackoffLimitExceeded",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Warning"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:44Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-profile-rptvj",
+      "namespace": "skills-1c",
+      "resourceVersion": "795",
+      "uid": "70a0b35c-29f2-4abd-8fe8-777380a60a50"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:44Z",
+    "message": "Successfully assigned skills-1c/pairs-profile-rptvj to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:44Z",
+      "name": "pairs-profile-rptvj.18eb0e1ab4fe1501",
+      "namespace": "skills-1c",
+      "resourceVersion": "799",
+      "uid": "6c37d23c-08ac-442f-92d3-d249aaffa85f"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:44Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-profile-rptvj",
+      "namespace": "skills-1c",
+      "resourceVersion": "797",
+      "uid": "70a0b35c-29f2-4abd-8fe8-777380a60a50"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:44Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:44Z",
+      "name": "pairs-profile-rptvj.18eb0e1ad67d1eed",
+      "namespace": "skills-1c",
+      "resourceVersion": "802",
+      "uid": "243cc53c-a4cd-427c-ae7d-433b7e4b6310"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:44Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-profile-rptvj",
+      "namespace": "skills-1c",
+      "resourceVersion": "797",
+      "uid": "70a0b35c-29f2-4abd-8fe8-777380a60a50"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:44Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:44Z",
+      "name": "pairs-profile-rptvj.18eb0e1ad9c6aa24",
+      "namespace": "skills-1c",
+      "resourceVersion": "803",
+      "uid": "68023ee9-98f2-4c03-89e9-68b9c53f9291"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:45Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-profile-rptvj",
+      "namespace": "skills-1c",
+      "resourceVersion": "797",
+      "uid": "70a0b35c-29f2-4abd-8fe8-777380a60a50"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:45Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:45Z",
+      "name": "pairs-profile-rptvj.18eb0e1ae55216af",
+      "namespace": "skills-1c",
+      "resourceVersion": "804",
+      "uid": "1cb063c9-0f24-4b38-bb33-51a79699ec80"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:19:44Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-profile",
+      "namespace": "skills-1c",
+      "resourceVersion": "794",
+      "uid": "cfd408b0-a7e9-4747-a11d-42b6bfddfa3c"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:19:44Z",
+    "message": "Created pod: pairs-profile-rptvj",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:44Z",
+      "name": "pairs-profile.18eb0e1ab47ac3c6",
+      "namespace": "skills-1c",
+      "resourceVersion": "796",
+      "uid": "11193e26-5a2b-4670-a48c-6c843b62b59d"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:20:56Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-profile",
+      "namespace": "skills-1c",
+      "resourceVersion": "906",
+      "uid": "cfd408b0-a7e9-4747-a11d-42b6bfddfa3c"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:20:56Z",
+    "message": "Job completed",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:20:56Z",
+      "name": "pairs-profile.18eb0e2b8d2bc93f",
+      "namespace": "skills-1c",
+      "resourceVersion": "909",
+      "uid": "eb7aad9d-c0c4-4f97-8e9e-7ff87d3771dd"
+    },
+    "reason": "Completed",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:20Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-reduce-gz5pb",
+      "namespace": "skills-1c",
+      "resourceVersion": "1307",
+      "uid": "1b7b545a-9508-495b-9049-6e5b2ebfda8e"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:20Z",
+    "message": "Successfully assigned skills-1c/pairs-reduce-gz5pb to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:20Z",
+      "name": "pairs-reduce-gz5pb.18eb0e4d22a16b2c",
+      "namespace": "skills-1c",
+      "resourceVersion": "1311",
+      "uid": "d70058d7-1a49-4ad7-a9a4-01cac5b573c0"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:21Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-reduce-gz5pb",
+      "namespace": "skills-1c",
+      "resourceVersion": "1308",
+      "uid": "1b7b545a-9508-495b-9049-6e5b2ebfda8e"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:21Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:21Z",
+      "name": "pairs-reduce-gz5pb.18eb0e4d2f00b163",
+      "namespace": "skills-1c",
+      "resourceVersion": "1313",
+      "uid": "f7f5f3bc-6fbb-4bc2-b5a6-364c05588f8e"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:21Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-reduce-gz5pb",
+      "namespace": "skills-1c",
+      "resourceVersion": "1308",
+      "uid": "1b7b545a-9508-495b-9049-6e5b2ebfda8e"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:21Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:21Z",
+      "name": "pairs-reduce-gz5pb.18eb0e4d3149ca50",
+      "namespace": "skills-1c",
+      "resourceVersion": "1314",
+      "uid": "73b7e109-024b-42a8-b4f9-17a1bc50cdf2"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:21Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-reduce-gz5pb",
+      "namespace": "skills-1c",
+      "resourceVersion": "1308",
+      "uid": "1b7b545a-9508-495b-9049-6e5b2ebfda8e"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:21Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:21Z",
+      "name": "pairs-reduce-gz5pb.18eb0e4d39604353",
+      "namespace": "skills-1c",
+      "resourceVersion": "1315",
+      "uid": "49d9cca3-b92b-455a-9284-65808ad8a5d5"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:20Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-reduce",
+      "namespace": "skills-1c",
+      "resourceVersion": "1306",
+      "uid": "32b190bd-caf8-49c1-a0a0-fd4dd2fae935"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:20Z",
+    "message": "Created pod: pairs-reduce-gz5pb",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:20Z",
+      "name": "pairs-reduce.18eb0e4d22387150",
+      "namespace": "skills-1c",
+      "resourceVersion": "1309",
+      "uid": "7cdbf0b3-2b33-47f7-a644-1cbd3b71d76e"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:25Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-reduce",
+      "namespace": "skills-1c",
+      "resourceVersion": "1326",
+      "uid": "32b190bd-caf8-49c1-a0a0-fd4dd2fae935"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:25Z",
+    "message": "Job completed",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:25Z",
+      "name": "pairs-reduce.18eb0e4e4903089d",
+      "namespace": "skills-1c",
+      "resourceVersion": "1329",
+      "uid": "a92deb36-fea3-49b8-b862-90f0162dff1f"
+    },
+    "reason": "Completed",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:20:59Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "pairs-tuned-vjjlc",
+      "namespace": "skills-1c",
+      "resourceVersion": "915",
+      "uid": "7b895e90-2479-43a8-9e81-ca636f936fc3"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:20:59Z",
+    "message": "Successfully assigned skills-1c/pairs-tuned-vjjlc to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:20:59Z",
+      "name": "pairs-tuned-vjjlc.18eb0e2c4d6227c0",
+      "namespace": "skills-1c",
+      "resourceVersion": "919",
+      "uid": "3626bb2e-8a67-4dfe-88c3-838996363959"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:21:00Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-tuned-vjjlc",
+      "namespace": "skills-1c",
+      "resourceVersion": "916",
+      "uid": "7b895e90-2479-43a8-9e81-ca636f936fc3"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:21:00Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:21:00Z",
+      "name": "pairs-tuned-vjjlc.18eb0e2c6ca51978",
+      "namespace": "skills-1c",
+      "resourceVersion": "922",
+      "uid": "2cf9f55b-3b70-477d-adf9-bdd07f0c227a"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:21:00Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-tuned-vjjlc",
+      "namespace": "skills-1c",
+      "resourceVersion": "916",
+      "uid": "7b895e90-2479-43a8-9e81-ca636f936fc3"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:21:00Z",
+    "message": "Created container: pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:21:00Z",
+      "name": "pairs-tuned-vjjlc.18eb0e2c6ef87661",
+      "namespace": "skills-1c",
+      "resourceVersion": "923",
+      "uid": "e005c7e0-211f-4c29-af5a-ae64f1a1971f"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:21:00Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{pairs}",
+      "kind": "Pod",
+      "name": "pairs-tuned-vjjlc",
+      "namespace": "skills-1c",
+      "resourceVersion": "916",
+      "uid": "7b895e90-2479-43a8-9e81-ca636f936fc3"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:21:00Z",
+    "message": "Started container pairs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:21:00Z",
+      "name": "pairs-tuned-vjjlc.18eb0e2c7776da51",
+      "namespace": "skills-1c",
+      "resourceVersion": "924",
+      "uid": "0479989f-e19f-4250-81aa-37d785b767e5"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:20:59Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-tuned",
+      "namespace": "skills-1c",
+      "resourceVersion": "914",
+      "uid": "32bcca19-4093-499c-af40-69d44790ca12"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:20:59Z",
+    "message": "Created pod: pairs-tuned-vjjlc",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:20:59Z",
+      "name": "pairs-tuned.18eb0e2c4d0a2b98",
+      "namespace": "skills-1c",
+      "resourceVersion": "917",
+      "uid": "7f231a6f-2057-4621-834f-5531742a434e"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:21:47Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "pairs-tuned",
+      "namespace": "skills-1c",
+      "resourceVersion": "994",
+      "uid": "32bcca19-4093-499c-af40-69d44790ca12"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:21:47Z",
+    "message": "Job completed",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:21:47Z",
+      "name": "pairs-tuned.18eb0e375e6729d2",
+      "namespace": "skills-1c",
+      "resourceVersion": "997",
+      "uid": "5cf822cb-5672-4cca-b267-e9f19f1ebb37"
+    },
+    "reason": "Completed",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:46Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "priority-high-sxw4q",
+      "namespace": "skills-1c",
+      "resourceVersion": "1417",
+      "uid": "115c6c6c-5f9b-4847-afd1-082a3d83306f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:46Z",
+    "message": "0/1 nodes are available: 1 Insufficient cpu.",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:46Z",
+      "name": "priority-high-sxw4q.18eb0e5316ba5499",
+      "namespace": "skills-1c",
+      "resourceVersion": "1418",
+      "uid": "0276e73f-3d34-493d-893c-18cb91cc3fba"
+    },
+    "reason": "FailedScheduling",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Warning"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:48Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "priority-high-sxw4q",
+      "namespace": "skills-1c",
+      "resourceVersion": "1420",
+      "uid": "115c6c6c-5f9b-4847-afd1-082a3d83306f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:48Z",
+    "message": "Successfully assigned skills-1c/priority-high-sxw4q to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:48Z",
+      "name": "priority-high-sxw4q.18eb0e539ee530bc",
+      "namespace": "skills-1c",
+      "resourceVersion": "1435",
+      "uid": "30b63048-04b5-4445-bc1f-13042e233fa6"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:48Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-high-sxw4q",
+      "namespace": "skills-1c",
+      "resourceVersion": "1434",
+      "uid": "115c6c6c-5f9b-4847-afd1-082a3d83306f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:48Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:48Z",
+      "name": "priority-high-sxw4q.18eb0e53acbf8db5",
+      "namespace": "skills-1c",
+      "resourceVersion": "1440",
+      "uid": "81e9811a-374f-4b6b-9aae-ab9174484fed"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:49Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-high-sxw4q",
+      "namespace": "skills-1c",
+      "resourceVersion": "1434",
+      "uid": "115c6c6c-5f9b-4847-afd1-082a3d83306f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:49Z",
+    "message": "Created container: hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:49Z",
+      "name": "priority-high-sxw4q.18eb0e53aee4c74c",
+      "namespace": "skills-1c",
+      "resourceVersion": "1441",
+      "uid": "5a3beb35-2b23-48a2-b47f-d2e063295a14"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:49Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-high-sxw4q",
+      "namespace": "skills-1c",
+      "resourceVersion": "1434",
+      "uid": "115c6c6c-5f9b-4847-afd1-082a3d83306f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:49Z",
+    "message": "Started container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:49Z",
+      "name": "priority-high-sxw4q.18eb0e53b6b9d860",
+      "namespace": "skills-1c",
+      "resourceVersion": "1442",
+      "uid": "c9b068da-a895-4c8b-be34-b311e56ff945"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:52Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-high-sxw4q",
+      "namespace": "skills-1c",
+      "resourceVersion": "1434",
+      "uid": "115c6c6c-5f9b-4847-afd1-082a3d83306f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:52Z",
+    "message": "Stopping container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:52Z",
+      "name": "priority-high-sxw4q.18eb0e548ce77680",
+      "namespace": "skills-1c",
+      "resourceVersion": "1454",
+      "uid": "95edfad0-f511-4367-be63-cfd67fa9505d"
+    },
+    "reason": "Killing",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:46Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "priority-high",
+      "namespace": "skills-1c",
+      "resourceVersion": "1416",
+      "uid": "a5e5f0d1-9096-488b-b71a-27535581dda2"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:46Z",
+    "message": "Created pod: priority-high-sxw4q",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:46Z",
+      "name": "priority-high.18eb0e5316b6b108",
+      "namespace": "skills-1c",
+      "resourceVersion": "1421",
+      "uid": "ec5bc480-3068-4654-9bb7-f251375de9d5"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:56Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "priority-low-fm8tn",
+      "namespace": "skills-1c",
+      "resourceVersion": "1465",
+      "uid": "6e8fd19f-507a-4b8f-97c9-fe019c264b68"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:56Z",
+    "message": "Successfully assigned skills-1c/priority-low-fm8tn to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:56Z",
+      "name": "priority-low-fm8tn.18eb0e55509054cf",
+      "namespace": "skills-1c",
+      "resourceVersion": "1469",
+      "uid": "33d7b134-3bf9-4726-be3d-9c6afc835c6e"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:56Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-low-fm8tn",
+      "namespace": "skills-1c",
+      "resourceVersion": "1468",
+      "uid": "6e8fd19f-507a-4b8f-97c9-fe019c264b68"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:56Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:56Z",
+      "name": "priority-low-fm8tn.18eb0e55612f0c98",
+      "namespace": "skills-1c",
+      "resourceVersion": "1471",
+      "uid": "ef88f9bc-2cce-4db7-bedc-d7f5a7aa46e3"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:56Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-low-fm8tn",
+      "namespace": "skills-1c",
+      "resourceVersion": "1468",
+      "uid": "6e8fd19f-507a-4b8f-97c9-fe019c264b68"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:56Z",
+    "message": "Created container: hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:56Z",
+      "name": "priority-low-fm8tn.18eb0e5563f8181c",
+      "namespace": "skills-1c",
+      "resourceVersion": "1472",
+      "uid": "aca47b66-4ff2-41c7-aa07-d87b568804d3"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:56Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-low-fm8tn",
+      "namespace": "skills-1c",
+      "resourceVersion": "1468",
+      "uid": "6e8fd19f-507a-4b8f-97c9-fe019c264b68"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:56Z",
+    "message": "Started container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:56Z",
+      "name": "priority-low-fm8tn.18eb0e556cecfe83",
+      "namespace": "skills-1c",
+      "resourceVersion": "1473",
+      "uid": "bbc0efa3-69a3-43ce-9155-dacb0906a714"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:58Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-low-fm8tn",
+      "namespace": "skills-1c",
+      "resourceVersion": "1468",
+      "uid": "6e8fd19f-507a-4b8f-97c9-fe019c264b68"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:58Z",
+    "message": "Stopping container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:58Z",
+      "name": "priority-low-fm8tn.18eb0e55f4ced118",
+      "namespace": "skills-1c",
+      "resourceVersion": "1482",
+      "uid": "aa73ce26-eb2f-494a-a9f9-d01e18326785"
+    },
+    "reason": "Killing",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:43Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "priority-low-zvpf8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1403",
+      "uid": "79d498c7-e9c2-4a73-924f-877b457571da"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:43Z",
+    "message": "Successfully assigned skills-1c/priority-low-zvpf8 to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:43Z",
+      "name": "priority-low-zvpf8.18eb0e527f5e8aa7",
+      "namespace": "skills-1c",
+      "resourceVersion": "1407",
+      "uid": "4334ad65-4d74-4a81-a626-ac75d27244ee"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:44Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-low-zvpf8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1405",
+      "uid": "79d498c7-e9c2-4a73-924f-877b457571da"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:44Z",
+    "message": "Container image \"skills-1c:lab5\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:44Z",
+      "name": "priority-low-zvpf8.18eb0e528be6c01e",
+      "namespace": "skills-1c",
+      "resourceVersion": "1409",
+      "uid": "d092b19e-488f-484d-aaa1-f0c21fc1c15a"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:44Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-low-zvpf8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1405",
+      "uid": "79d498c7-e9c2-4a73-924f-877b457571da"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:44Z",
+    "message": "Created container: hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:44Z",
+      "name": "priority-low-zvpf8.18eb0e528dff41b5",
+      "namespace": "skills-1c",
+      "resourceVersion": "1410",
+      "uid": "3bd8cf7a-0b8d-4e8c-bf31-a60e77cf6f27"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:44Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-low-zvpf8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1405",
+      "uid": "79d498c7-e9c2-4a73-924f-877b457571da"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:44Z",
+    "message": "Started container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:44Z",
+      "name": "priority-low-zvpf8.18eb0e5295e9e511",
+      "namespace": "skills-1c",
+      "resourceVersion": "1411",
+      "uid": "bb12b59f-8f6f-44f1-96cf-300fa27b1296"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:46Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "priority-low-zvpf8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1413",
+      "uid": "79d498c7-e9c2-4a73-924f-877b457571da"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:46Z",
+    "message": "Preempted by pod 115c6c6c-5f9b-4847-afd1-082a3d83306f on node itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:46Z",
+      "name": "priority-low-zvpf8.18eb0e53180eebc2",
+      "namespace": "skills-1c",
+      "resourceVersion": "1424",
+      "uid": "70506ccb-c74c-427f-b8eb-670d19a6857e"
+    },
+    "reason": "Preempted",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:46Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{hold}",
+      "kind": "Pod",
+      "name": "priority-low-zvpf8",
+      "namespace": "skills-1c",
+      "resourceVersion": "1405",
+      "uid": "79d498c7-e9c2-4a73-924f-877b457571da"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:46Z",
+    "message": "Stopping container hold",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:46Z",
+      "name": "priority-low-zvpf8.18eb0e5318211bf9",
+      "namespace": "skills-1c",
+      "resourceVersion": "1425",
+      "uid": "61b30a35-c80c-46e3-be3f-83039f166201"
+    },
+    "reason": "Killing",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:43Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "priority-low",
+      "namespace": "skills-1c",
+      "resourceVersion": "1402",
+      "uid": "4725c010-bee2-4210-9c2f-f296650ba07e"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:43Z",
+    "message": "Created pod: priority-low-zvpf8",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:43Z",
+      "name": "priority-low.18eb0e527ef610c9",
+      "namespace": "skills-1c",
+      "resourceVersion": "1404",
+      "uid": "1ce94f40-3398-4597-9ccc-6a9dd1cbbf63"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:23:56Z",
+    "involvedObject": {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "name": "priority-low",
+      "namespace": "skills-1c",
+      "resourceVersion": "1446",
+      "uid": "4725c010-bee2-4210-9c2f-f296650ba07e"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:23:56Z",
+    "message": "Created pod: priority-low-fm8tn",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:23:56Z",
+      "name": "priority-low.18eb0e55500a2ae7",
+      "namespace": "skills-1c",
+      "resourceVersion": "1466",
+      "uid": "57e5c12a-6503-49d7-8dcf-087a4f8f0954"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "job-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "job-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:11Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "name": "rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1039",
+      "uid": "9bd584d7-8f4c-4147-9c45-3d0908f0b3aa"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:11Z",
+    "message": "Successfully assigned skills-1c/rustfs-0 to itmo-j3312-control-plane",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:11Z",
+      "name": "rustfs-0.18eb0e3cf7a3a434",
+      "namespace": "skills-1c",
+      "resourceVersion": "1127",
+      "uid": "7f006379-7790-4cb6-ace9-261ded5bfc32"
+    },
+    "reason": "Scheduled",
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": "",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:13Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{rustfs}",
+      "kind": "Pod",
+      "name": "rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1126",
+      "uid": "9bd584d7-8f4c-4147-9c45-3d0908f0b3aa"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:13Z",
+    "message": "Container image \"rustfs/rustfs:1.0.3\" already present on machine",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:13Z",
+      "name": "rustfs-0.18eb0e3d8c558a56",
+      "namespace": "skills-1c",
+      "resourceVersion": "1131",
+      "uid": "0ebb716b-5820-40fb-9e47-0939e8a8ebc2"
+    },
+    "reason": "Pulled",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:14Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{rustfs}",
+      "kind": "Pod",
+      "name": "rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1126",
+      "uid": "9bd584d7-8f4c-4147-9c45-3d0908f0b3aa"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:14Z",
+    "message": "Created container: rustfs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:14Z",
+      "name": "rustfs-0.18eb0e3db4319cd9",
+      "namespace": "skills-1c",
+      "resourceVersion": "1132",
+      "uid": "b335197b-815e-4a5d-9add-cc673337db5b"
+    },
+    "reason": "Created",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:14Z",
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{rustfs}",
+      "kind": "Pod",
+      "name": "rustfs-0",
+      "namespace": "skills-1c",
+      "resourceVersion": "1126",
+      "uid": "9bd584d7-8f4c-4147-9c45-3d0908f0b3aa"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:14Z",
+    "message": "Started container rustfs",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:14Z",
+      "name": "rustfs-0.18eb0e3dbbcbbf69",
+      "namespace": "skills-1c",
+      "resourceVersion": "1133",
+      "uid": "70cda8f0-5d2b-4504-a5c7-abce4626b4fc"
+    },
+    "reason": "Started",
+    "reportingComponent": "kubelet",
+    "reportingInstance": "itmo-j3312-control-plane",
+    "source": {
+      "component": "kubelet",
+      "host": "itmo-j3312-control-plane"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "apps/v1",
+      "kind": "StatefulSet",
+      "name": "rustfs",
+      "namespace": "skills-1c",
+      "resourceVersion": "1026",
+      "uid": "1571ad12-b3d3-4e84-8b68-f2811646ec7f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "create Claim disk1-rustfs-0 Pod rustfs-0 in StatefulSet rustfs success",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "rustfs.18eb0e3b8ce52f2c",
+      "namespace": "skills-1c",
+      "resourceVersion": "1030",
+      "uid": "9d6654e0-ceb1-40da-8595-17c452e33fea"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "statefulset-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "statefulset-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "apps/v1",
+      "kind": "StatefulSet",
+      "name": "rustfs",
+      "namespace": "skills-1c",
+      "resourceVersion": "1026",
+      "uid": "1571ad12-b3d3-4e84-8b68-f2811646ec7f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "create Claim disk2-rustfs-0 Pod rustfs-0 in StatefulSet rustfs success",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "rustfs.18eb0e3b8d4a3346",
+      "namespace": "skills-1c",
+      "resourceVersion": "1033",
+      "uid": "9c672eb5-9141-41d3-ae2e-d7f478d1db92"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "statefulset-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "statefulset-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "apps/v1",
+      "kind": "StatefulSet",
+      "name": "rustfs",
+      "namespace": "skills-1c",
+      "resourceVersion": "1026",
+      "uid": "1571ad12-b3d3-4e84-8b68-f2811646ec7f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "create Claim disk3-rustfs-0 Pod rustfs-0 in StatefulSet rustfs success",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "rustfs.18eb0e3b8db2fe4f",
+      "namespace": "skills-1c",
+      "resourceVersion": "1035",
+      "uid": "6b3c03a8-cef3-4150-abe9-b32ffc7dd3d1"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "statefulset-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "statefulset-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "apps/v1",
+      "kind": "StatefulSet",
+      "name": "rustfs",
+      "namespace": "skills-1c",
+      "resourceVersion": "1026",
+      "uid": "1571ad12-b3d3-4e84-8b68-f2811646ec7f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "create Claim disk4-rustfs-0 Pod rustfs-0 in StatefulSet rustfs success",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "rustfs.18eb0e3b8e1db390",
+      "namespace": "skills-1c",
+      "resourceVersion": "1037",
+      "uid": "2133e884-e64c-4d08-89a1-03bb30d1b54d"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "statefulset-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "statefulset-controller"
+    },
+    "type": "Normal"
+  },
+  {
+    "apiVersion": "v1",
+    "count": 1,
+    "eventTime": null,
+    "firstTimestamp": "2026-11-24T18:22:05Z",
+    "involvedObject": {
+      "apiVersion": "apps/v1",
+      "kind": "StatefulSet",
+      "name": "rustfs",
+      "namespace": "skills-1c",
+      "resourceVersion": "1026",
+      "uid": "1571ad12-b3d3-4e84-8b68-f2811646ec7f"
+    },
+    "kind": "Event",
+    "lastTimestamp": "2026-11-24T18:22:05Z",
+    "message": "create Pod rustfs-0 in StatefulSet rustfs successful",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:22:05Z",
+      "name": "rustfs.18eb0e3b8eb91294",
+      "namespace": "skills-1c",
+      "resourceVersion": "1041",
+      "uid": "0a1ceb14-f390-4979-8a2e-c7c8d37cfceb"
+    },
+    "reason": "SuccessfulCreate",
+    "reportingComponent": "statefulset-controller",
+    "reportingInstance": "",
+    "source": {
+      "component": "statefulset-controller"
+    },
+    "type": "Normal"
+  }
+]

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata: {name: skills-quota}
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata: {name: cpu-budget, namespace: skills-quota}
+spec:
+  hard:
+    requests.cpu: "1"
+    limits.cpu: "2"
+    requests.memory: 256Mi
+    limits.memory: 512Mi

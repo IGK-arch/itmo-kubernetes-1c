@@ -1,0 +1,207 @@
+[
+  {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:19:44Z",
+      "generateName": "pairs-profile-",
+      "generation": 1,
+      "labels": {
+        "batch.kubernetes.io/controller-uid": "cfd408b0-a7e9-4747-a11d-42b6bfddfa3c",
+        "batch.kubernetes.io/job-name": "pairs-profile",
+        "controller-uid": "cfd408b0-a7e9-4747-a11d-42b6bfddfa3c",
+        "job-name": "pairs-profile"
+      },
+      "name": "pairs-profile-rptvj",
+      "namespace": "skills-1c",
+      "ownerReferences": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "pairs-profile",
+          "uid": "cfd408b0-a7e9-4747-a11d-42b6bfddfa3c"
+        }
+      ],
+      "resourceVersion": "907",
+      "uid": "70a0b35c-29f2-4abd-8fe8-777380a60a50"
+    },
+    "spec": {
+      "automountServiceAccountToken": false,
+      "containers": [
+        {
+          "args": [
+            "single"
+          ],
+          "image": "skills-1c:lab5",
+          "imagePullPolicy": "Never",
+          "name": "pairs",
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "768Mi"
+            },
+            "requests": {
+              "cpu": "250m",
+              "memory": "64Mi"
+            }
+          },
+          "terminationMessagePath": "/dev/termination-log",
+          "terminationMessagePolicy": "File",
+          "volumeMounts": [
+            {
+              "mountPath": "/input/it_vacancies_2024.csv",
+              "name": "csv",
+              "readOnly": true
+            }
+          ]
+        }
+      ],
+      "dnsPolicy": "ClusterFirst",
+      "enableServiceLinks": true,
+      "nodeName": "itmo-j3312-control-plane",
+      "preemptionPolicy": "PreemptLowerPriority",
+      "priority": 0,
+      "restartPolicy": "Never",
+      "schedulerName": "default-scheduler",
+      "securityContext": {},
+      "serviceAccount": "default",
+      "serviceAccountName": "default",
+      "terminationGracePeriodSeconds": 30,
+      "tolerations": [
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/not-ready",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        },
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/unreachable",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        }
+      ],
+      "volumes": [
+        {
+          "hostPath": {
+            "path": "/lab-input/it_vacancies_2024.csv",
+            "type": "File"
+          },
+          "name": "csv"
+        }
+      ]
+    },
+    "status": {
+      "conditions": [
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:20:55Z",
+          "observedGeneration": 1,
+          "status": "False",
+          "type": "PodReadyToStartContainers"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:19:44Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "True",
+          "type": "Initialized"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:20:54Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "Ready"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:20:54Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "ContainersReady"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:19:44Z",
+          "observedGeneration": 1,
+          "status": "True",
+          "type": "PodScheduled"
+        }
+      ],
+      "containerStatuses": [
+        {
+          "allocatedResources": {
+            "cpu": "250m",
+            "memory": "64Mi"
+          },
+          "containerID": "containerd://3d8a4df3006acd2229cb9712e53f4f8cefe9a8ea450cc6f05abf3314549f6e94",
+          "image": "docker.io/library/skills-1c:lab5",
+          "imageID": "sha256:8a2a3c6c0d6e2744ed7a360b5beb89253468667660d1ab0500976f30f9e4441b",
+          "lastState": {},
+          "name": "pairs",
+          "ready": false,
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "768Mi"
+            },
+            "requests": {
+              "cpu": "250m",
+              "memory": "64Mi"
+            }
+          },
+          "restartCount": 0,
+          "started": false,
+          "state": {
+            "terminated": {
+              "containerID": "containerd://3d8a4df3006acd2229cb9712e53f4f8cefe9a8ea450cc6f05abf3314549f6e94",
+              "exitCode": 0,
+              "finishedAt": "2026-11-24T18:20:54Z",
+              "reason": "Completed",
+              "startedAt": "2026-11-24T18:19:45Z"
+            }
+          },
+          "user": {
+            "linux": {
+              "gid": 0,
+              "supplementalGroups": [
+                0
+              ],
+              "uid": 65532
+            }
+          },
+          "volumeMounts": [
+            {
+              "mountPath": "/input/it_vacancies_2024.csv",
+              "name": "csv",
+              "readOnly": true,
+              "recursiveReadOnly": "Disabled"
+            }
+          ]
+        }
+      ],
+      "hostIP": "172.18.0.2",
+      "hostIPs": [
+        {
+          "ip": "172.18.0.2"
+        }
+      ],
+      "observedGeneration": 1,
+      "phase": "Succeeded",
+      "podIP": "10.244.0.7",
+      "podIPs": [
+        {
+          "ip": "10.244.0.7"
+        }
+      ],
+      "qosClass": "Burstable",
+      "startTime": "2026-11-24T18:19:44Z"
+    }
+  }
+]

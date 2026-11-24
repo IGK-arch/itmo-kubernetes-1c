@@ -1,0 +1,126 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "creationTimestamp": "2026-11-24T18:24:22Z",
+    "generation": 1,
+    "labels": {
+      "batch.kubernetes.io/controller-uid": "e1b856e6-5483-4f88-9125-8d11e90601f0",
+      "batch.kubernetes.io/job-name": "pairs-lab3-original",
+      "controller-uid": "e1b856e6-5483-4f88-9125-8d11e90601f0",
+      "job-name": "pairs-lab3-original"
+    },
+    "name": "pairs-lab3-original",
+    "namespace": "skills-1c",
+    "resourceVersion": "1605",
+    "uid": "e1b856e6-5483-4f88-9125-8d11e90601f0"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "completionMode": "NonIndexed",
+    "completions": 1,
+    "manualSelector": false,
+    "parallelism": 1,
+    "podReplacementPolicy": "TerminatingOrFailed",
+    "selector": {
+      "matchLabels": {
+        "batch.kubernetes.io/controller-uid": "e1b856e6-5483-4f88-9125-8d11e90601f0"
+      }
+    },
+    "suspend": false,
+    "template": {
+      "metadata": {
+        "labels": {
+          "batch.kubernetes.io/controller-uid": "e1b856e6-5483-4f88-9125-8d11e90601f0",
+          "batch.kubernetes.io/job-name": "pairs-lab3-original",
+          "controller-uid": "e1b856e6-5483-4f88-9125-8d11e90601f0",
+          "job-name": "pairs-lab3-original"
+        }
+      },
+      "spec": {
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "RUSTFS_ENDPOINT_URL",
+                "value": "http://rustfs.skills-1c.svc.cluster.local:9000"
+              },
+              {
+                "name": "RUSTFS_ACCESS_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "AWS_ACCESS_KEY_ID",
+                    "name": "s3-auth"
+                  }
+                }
+              },
+              {
+                "name": "RUSTFS_SECRET_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "AWS_SECRET_ACCESS_KEY",
+                    "name": "s3-auth"
+                  }
+                }
+              }
+            ],
+            "envFrom": [
+              {
+                "secretRef": {
+                  "name": "s3-auth"
+                }
+              }
+            ],
+            "image": "skills-1c:original",
+            "imagePullPolicy": "Never",
+            "name": "pairs",
+            "resources": {
+              "limits": {
+                "cpu": "2",
+                "memory": "336Mi"
+              },
+              "requests": {
+                "cpu": "500m",
+                "memory": "192Mi"
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File"
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30
+      }
+    }
+  },
+  "status": {
+    "completionTime": "2026-11-24T18:24:44Z",
+    "conditions": [
+      {
+        "lastProbeTime": "2026-11-24T18:24:44Z",
+        "lastTransitionTime": "2026-11-24T18:24:44Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "SuccessCriteriaMet"
+      },
+      {
+        "lastProbeTime": "2026-11-24T18:24:44Z",
+        "lastTransitionTime": "2026-11-24T18:24:44Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "Complete"
+      }
+    ],
+    "ready": 0,
+    "startTime": "2026-11-24T18:24:22Z",
+    "succeeded": 1,
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  }
+}

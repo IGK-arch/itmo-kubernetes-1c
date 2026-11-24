@@ -1,0 +1,2 @@
+$ kubectl -n skills-1c create -f manifests/cpu-wait.json
+job.batch/cpu-wait created

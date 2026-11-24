@@ -1,0 +1,2 @@
+$ kubectl -n skills-quota create -f manifests/quota-second.json
+Error from server (Forbidden): error when creating "manifests/quota-second.json": pods "quota-second" is forbidden: exceeded quota: cpu-budget, requested: requests.cpu=500m, used: requests.cpu=750m, limited: requests.cpu=1

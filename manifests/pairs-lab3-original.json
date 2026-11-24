@@ -1,0 +1,66 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "pairs-lab3-original",
+    "namespace": "skills-1c"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "template": {
+      "spec": {
+        "restartPolicy": "Never",
+        "containers": [
+          {
+            "name": "pairs",
+            "image": "skills-1c:original",
+            "imagePullPolicy": "Never",
+            "args": [],
+            "resources": {
+              "requests": {
+                "cpu": "500m",
+                "memory": "192Mi"
+              },
+              "limits": {
+                "cpu": "2",
+                "memory": "336Mi"
+              }
+            },
+            "env": [
+              {
+                "name": "RUSTFS_ENDPOINT_URL",
+                "value": "http://rustfs.skills-1c.svc.cluster.local:9000"
+              },
+              {
+                "name": "RUSTFS_ACCESS_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "name": "s3-auth",
+                    "key": "AWS_ACCESS_KEY_ID"
+                  }
+                }
+              },
+              {
+                "name": "RUSTFS_SECRET_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "name": "s3-auth",
+                    "key": "AWS_SECRET_ACCESS_KEY"
+                  }
+                }
+              }
+            ],
+            "envFrom": [
+              {
+                "secretRef": {
+                  "name": "s3-auth"
+                }
+              }
+            ]
+          }
+        ],
+        "automountServiceAccountToken": false
+      }
+    }
+  }
+}

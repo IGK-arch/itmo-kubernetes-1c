@@ -1,0 +1,34 @@
+[
+  {
+    "bucket": "it-vacancies",
+    "key": "it_vacancy_data.csv",
+    "bytes": 87555558,
+    "sha256": "dadde56cc7e47d4d5294a0933ef26d6abd76db7b7de7503887ab7b252b423dc7",
+    "source_http": 200,
+    "target_http": 200
+  },
+  {
+    "bucket": "it-vacancies",
+    "key": "vacancies-sample.json",
+    "bytes": 399954,
+    "sha256": "466b11f0eb19568211cba703c0758ef7b59a3084f6761e71d1203f4ef548f7fa",
+    "source_http": 200,
+    "target_http": 200
+  },
+  {
+    "bucket": "it-vacancies",
+    "key": "dataset-info.json",
+    "bytes": 620,
+    "sha256": "c8fd6b55b03bb8c89c3a0d64fbcc61a864ebae73abead12a876b30b7d036726d",
+    "source_http": 200,
+    "target_http": 200
+  },
+  {
+    "bucket": "hh-lake",
+    "key": "raw/it_vacancies_2024.csv",
+    "bytes": 847619384,
+    "sha256": "303db922b541e4440906f5a7e8be32fb55e8808f950ffddb8c272f1548212a65",
+    "source_http": 200,
+    "target_http": 200
+  }
+]

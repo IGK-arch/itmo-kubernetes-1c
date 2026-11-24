@@ -1,0 +1,41 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "priority-low",
+    "namespace": "skills-1c"
+  },
+  "spec": {
+    "backoffLimit": 2,
+    "template": {
+      "spec": {
+        "restartPolicy": "Never",
+        "terminationGracePeriodSeconds": 2,
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "name": "hold",
+            "image": "skills-1c:lab5",
+            "imagePullPolicy": "Never",
+            "command": [
+              "python",
+              "-c",
+              "import time; time.sleep(1800)"
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "14450m",
+                "memory": "16Mi"
+              },
+              "limits": {
+                "cpu": "14450m",
+                "memory": "64Mi"
+              }
+            }
+          }
+        ],
+        "priorityClassName": "j3312-low"
+      }
+    }
+  }
+}

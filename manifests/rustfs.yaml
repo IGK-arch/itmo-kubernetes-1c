@@ -1,0 +1,60 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rustfs
+  namespace: skills-1c
+spec:
+  selector: {app: rustfs}
+  ports:
+    - {name: s3, port: 9000, targetPort: 9000}
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: rustfs
+  namespace: skills-1c
+spec:
+  serviceName: rustfs
+  replicas: 1
+  selector:
+    matchLabels: {app: rustfs}
+  template:
+    metadata:
+      labels: {app: rustfs}
+    spec:
+      securityContext:
+        fsGroup: 10001
+      containers:
+        - name: rustfs
+          image: rustfs/rustfs:1.0.3
+          imagePullPolicy: IfNotPresent
+          env:
+            - {name: RUSTFS_VOLUMES, value: "/data/disk{1...4}"}
+            - {name: RUSTFS_STORAGE_CLASS_STANDARD, value: "EC:2"}
+            - {name: RUSTFS_UNSAFE_BYPASS_DISK_CHECK, value: "true"}
+            - name: RUSTFS_ACCESS_KEY
+              valueFrom: {secretKeyRef: {name: s3-auth, key: AWS_ACCESS_KEY_ID}}
+            - name: RUSTFS_SECRET_KEY
+              valueFrom: {secretKeyRef: {name: s3-auth, key: AWS_SECRET_ACCESS_KEY}}
+          ports:
+            - {name: s3, containerPort: 9000}
+          readinessProbe:
+            tcpSocket: {port: s3}
+            periodSeconds: 3
+          resources:
+            requests: {cpu: 100m, memory: 256Mi}
+            limits: {cpu: "2", memory: 1536Mi}
+          volumeMounts:
+            - {name: disk1, mountPath: /data/disk1}
+            - {name: disk2, mountPath: /data/disk2}
+            - {name: disk3, mountPath: /data/disk3}
+            - {name: disk4, mountPath: /data/disk4}
+  volumeClaimTemplates:
+    - metadata: {name: disk1}
+      spec: {accessModes: [ReadWriteOnce], resources: {requests: {storage: 1Gi}}}
+    - metadata: {name: disk2}
+      spec: {accessModes: [ReadWriteOnce], resources: {requests: {storage: 1Gi}}}
+    - metadata: {name: disk3}
+      spec: {accessModes: [ReadWriteOnce], resources: {requests: {storage: 1Gi}}}
+    - metadata: {name: disk4}
+      spec: {accessModes: [ReadWriteOnce], resources: {requests: {storage: 1Gi}}}

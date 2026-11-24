@@ -1,0 +1,4 @@
+$ kubectl -n skills-1c get pods -l 'job-name in (cpu-holder,cpu-wait)' -o wide
+NAME               READY   STATUS    RESTARTS   AGE   IP            NODE                       NOMINATED NODE   READINESS GATES
+cpu-holder-rv5gv   1/1     Running   0          4s    10.244.0.20   itmo-j3312-control-plane   <none>           <none>
+cpu-wait-78jxz     0/1     Pending   0          1s    <none>        <none>                     <none>           <none>

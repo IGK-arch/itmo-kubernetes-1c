@@ -1,0 +1,30 @@
+[
+  {
+    "claim": "disk1-rustfs-0",
+    "volume": "pvc-bd08a29e-8046-4d04-a73b-98d04c6b8d97",
+    "phase": "Bound",
+    "capacity": "1Gi",
+    "storage_class": "standard"
+  },
+  {
+    "claim": "disk2-rustfs-0",
+    "volume": "pvc-1d3a36f7-3cfb-474a-a751-bca606a8446d",
+    "phase": "Bound",
+    "capacity": "1Gi",
+    "storage_class": "standard"
+  },
+  {
+    "claim": "disk3-rustfs-0",
+    "volume": "pvc-a291b96f-021a-4bf7-b92e-e0cbb6b5f8df",
+    "phase": "Bound",
+    "capacity": "1Gi",
+    "storage_class": "standard"
+  },
+  {
+    "claim": "disk4-rustfs-0",
+    "volume": "pvc-0128b8b8-f9db-4d22-9f97-b82c5948cfae",
+    "phase": "Bound",
+    "capacity": "1Gi",
+    "storage_class": "standard"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "pairs-oom",
+    "namespace": "skills-1c"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "template": {
+      "spec": {
+        "restartPolicy": "Never",
+        "containers": [
+          {
+            "name": "pairs",
+            "image": "skills-1c:lab5",
+            "imagePullPolicy": "Never",
+            "args": [
+              "single"
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "8Mi"
+              },
+              "limits": {
+                "cpu": "1",
+                "memory": "12Mi"
+              }
+            },
+            "volumeMounts": [
+              {
+                "name": "csv",
+                "mountPath": "/input/it_vacancies_2024.csv",
+                "readOnly": true
+              }
+            ]
+          }
+        ],
+        "automountServiceAccountToken": false,
+        "volumes": [
+          {
+            "name": "csv",
+            "hostPath": {
+              "path": "/lab-input/it_vacancies_2024.csv",
+              "type": "File"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

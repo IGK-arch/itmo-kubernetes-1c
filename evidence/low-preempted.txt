@@ -1,0 +1,8 @@
+$ kubectl -n skills-1c get events --field-selector involvedObject.uid=79d498c7-e9c2-4a73-924f-877b457571da
+LAST SEEN   TYPE     REASON      OBJECT                   MESSAGE
+8s          Normal   Scheduled   pod/priority-low-zvpf8   Successfully assigned skills-1c/priority-low-zvpf8 to itmo-j3312-control-plane
+7s          Normal   Pulled      pod/priority-low-zvpf8   Container image "skills-1c:lab5" already present on machine
+7s          Normal   Created     pod/priority-low-zvpf8   Created container: hold
+7s          Normal   Started     pod/priority-low-zvpf8   Started container hold
+5s          Normal   Preempted   pod/priority-low-zvpf8   Preempted by pod 115c6c6c-5f9b-4847-afd1-082a3d83306f on node itmo-j3312-control-plane
+5s          Normal   Killing     pod/priority-low-zvpf8   Stopping container hold

@@ -1,0 +1,61 @@
+$ kubectl -n skills-1c describe pod priority-high-sxw4q
+Name:                 priority-high-sxw4q
+Namespace:            skills-1c
+Priority:             1000
+Priority Class Name:  j3312-high
+Service Account:      default
+Node:                 itmo-j3312-control-plane/172.18.0.2
+Start Time:           Tue, 24 Nov 2026 21:23:48 +0300
+Labels:               batch.kubernetes.io/controller-uid=a5e5f0d1-9096-488b-b71a-27535581dda2
+                      batch.kubernetes.io/job-name=priority-high
+                      controller-uid=a5e5f0d1-9096-488b-b71a-27535581dda2
+                      job-name=priority-high
+Annotations:          <none>
+Status:               Running
+IP:                   10.244.0.23
+IPs:
+  IP:           10.244.0.23
+Controlled By:  Job/priority-high
+Containers:
+  hold:
+    Container ID:  containerd://58838158d4268f157b569b5c2e299c5a68c4216e7a131d19c45483df449de24d
+    Image:         skills-1c:lab5
+    Image ID:      sha256:8a2a3c6c0d6e2744ed7a360b5beb89253468667660d1ab0500976f30f9e4441b
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      python
+      -c
+      import time; time.sleep(1800)
+    State:          Running
+      Started:      Tue, 24 Nov 2026 21:23:49 +0300
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  64Mi
+    Requests:
+      cpu:        1
+      memory:     16Mi
+    Environment:  <none>
+    Mounts:       <none>
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:                      <none>
+QoS Class:                    Burstable
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  6s    default-scheduler  0/1 nodes are available: 1 Insufficient cpu.
+  Normal   Scheduled         4s    default-scheduler  Successfully assigned skills-1c/priority-high-sxw4q to itmo-j3312-control-plane
+  Normal   Pulled            4s    kubelet            Container image "skills-1c:lab5" already present on machine
+  Normal   Created           3s    kubelet            Created container: hold
+  Normal   Started           3s    kubelet            Started container hold

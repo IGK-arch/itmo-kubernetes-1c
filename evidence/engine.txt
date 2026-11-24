@@ -1,0 +1,6 @@
+tmp/kind: OK
+tmp/kubectl: OK
+Docker client 28.4.0, server 28.4.0
+kind v0.30.0 go1.24.6 linux/amd64
+Client Version: v1.34.0
+Kustomize Version: v5.7.1

@@ -1,0 +1,21 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  18.94kB
+Step 1/5 : FROM skills-1c:lab5
+ ---> 8a2a3c6c0d6e
+Step 2/5 : COPY src/ /lab3/src/
+ ---> 093f14afb421
+Step 3/5 : COPY config.json check.py /lab3/
+ ---> cff60f1b2c6d
+Step 4/5 : ENV PYTHONPATH=/lab3/src:/app
+ ---> Running in b1e948dd712b
+ ---> Removed intermediate container b1e948dd712b
+ ---> b69352e61843
+Step 5/5 : ENTRYPOINT ["python", "/lab3/check.py"]
+ ---> Running in 99f6d3467542
+ ---> Removed intermediate container 99f6d3467542
+ ---> fdb015a82fe8
+Successfully built fdb015a82fe8
+Successfully tagged skills-1c:original

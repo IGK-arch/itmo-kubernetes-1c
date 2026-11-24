@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "runs": 3,
+    "median_wall_seconds": 23.245145200009574,
+    "min_wall_seconds": 22.891130300005898,
+    "max_wall_seconds": 24.686836099994252,
+    "median_peak_rss_mib": 393.87109375,
+    "maximum_peak_rss_mib": 394.9296875
+  },
+  "optimized": {
+    "runs": 3,
+    "median_wall_seconds": 19.88385769999877,
+    "min_wall_seconds": 19.154860099995858,
+    "max_wall_seconds": 21.0688353000005,
+    "median_peak_rss_mib": 267.17578125,
+    "maximum_peak_rss_mib": 267.72265625
+  },
+  "duckdb": {
+    "runs": 3,
+    "median_wall_seconds": 6.490666700003203,
+    "min_wall_seconds": 6.490235799996299,
+    "max_wall_seconds": 8.63486790000752,
+    "median_peak_rss_mib": 1467.36328125,
+    "maximum_peak_rss_mib": 1467.9453125
+  }
+}

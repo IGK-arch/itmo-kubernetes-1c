@@ -1,0 +1,44 @@
+$ kubectl -n skills-1c describe pod cpu-wait-78jxz
+Name:             cpu-wait-78jxz
+Namespace:        skills-1c
+Priority:         0
+Service Account:  default
+Node:             <none>
+Labels:           batch.kubernetes.io/controller-uid=732d93a0-2703-4630-9296-c25764b46752
+                  batch.kubernetes.io/job-name=cpu-wait
+                  controller-uid=732d93a0-2703-4630-9296-c25764b46752
+                  job-name=cpu-wait
+Annotations:      <none>
+Status:           Pending
+IP:               
+IPs:              <none>
+Controlled By:    Job/cpu-wait
+Containers:
+  hold:
+    Image:      skills-1c:lab5
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      python
+      -c
+      import time; time.sleep(1800)
+    Limits:
+      cpu:     1
+      memory:  64Mi
+    Requests:
+      cpu:        1
+      memory:     16Mi
+    Environment:  <none>
+    Mounts:       <none>
+Conditions:
+  Type           Status
+  PodScheduled   False 
+Volumes:         <none>
+QoS Class:       Burstable
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  1s    default-scheduler  0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.

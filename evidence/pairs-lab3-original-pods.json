@@ -1,0 +1,211 @@
+[
+  {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+      "creationTimestamp": "2026-11-24T18:24:22Z",
+      "generateName": "pairs-lab3-original-",
+      "generation": 1,
+      "labels": {
+        "batch.kubernetes.io/controller-uid": "e1b856e6-5483-4f88-9125-8d11e90601f0",
+        "batch.kubernetes.io/job-name": "pairs-lab3-original",
+        "controller-uid": "e1b856e6-5483-4f88-9125-8d11e90601f0",
+        "job-name": "pairs-lab3-original"
+      },
+      "name": "pairs-lab3-original-8zz5j",
+      "namespace": "skills-1c",
+      "ownerReferences": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "pairs-lab3-original",
+          "uid": "e1b856e6-5483-4f88-9125-8d11e90601f0"
+        }
+      ],
+      "resourceVersion": "1604",
+      "uid": "6e100db1-42d2-48ea-82c0-06275b7bad12"
+    },
+    "spec": {
+      "automountServiceAccountToken": false,
+      "containers": [
+        {
+          "env": [
+            {
+              "name": "RUSTFS_ENDPOINT_URL",
+              "value": "http://rustfs.skills-1c.svc.cluster.local:9000"
+            },
+            {
+              "name": "RUSTFS_ACCESS_KEY",
+              "valueFrom": {
+                "secretKeyRef": {
+                  "key": "AWS_ACCESS_KEY_ID",
+                  "name": "s3-auth"
+                }
+              }
+            },
+            {
+              "name": "RUSTFS_SECRET_KEY",
+              "valueFrom": {
+                "secretKeyRef": {
+                  "key": "AWS_SECRET_ACCESS_KEY",
+                  "name": "s3-auth"
+                }
+              }
+            }
+          ],
+          "envFrom": [
+            {
+              "secretRef": {
+                "name": "s3-auth"
+              }
+            }
+          ],
+          "image": "skills-1c:original",
+          "imagePullPolicy": "Never",
+          "name": "pairs",
+          "resources": {
+            "limits": {
+              "cpu": "2",
+              "memory": "336Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "192Mi"
+            }
+          },
+          "terminationMessagePath": "/dev/termination-log",
+          "terminationMessagePolicy": "File"
+        }
+      ],
+      "dnsPolicy": "ClusterFirst",
+      "enableServiceLinks": true,
+      "nodeName": "itmo-j3312-control-plane",
+      "preemptionPolicy": "PreemptLowerPriority",
+      "priority": 0,
+      "restartPolicy": "Never",
+      "schedulerName": "default-scheduler",
+      "securityContext": {},
+      "serviceAccount": "default",
+      "serviceAccountName": "default",
+      "terminationGracePeriodSeconds": 30,
+      "tolerations": [
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/not-ready",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        },
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/unreachable",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        }
+      ]
+    },
+    "status": {
+      "conditions": [
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:24:43Z",
+          "observedGeneration": 1,
+          "status": "False",
+          "type": "PodReadyToStartContainers"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:24:22Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "True",
+          "type": "Initialized"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:24:42Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "Ready"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:24:42Z",
+          "observedGeneration": 1,
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "ContainersReady"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-24T18:24:22Z",
+          "observedGeneration": 1,
+          "status": "True",
+          "type": "PodScheduled"
+        }
+      ],
+      "containerStatuses": [
+        {
+          "allocatedResources": {
+            "cpu": "500m",
+            "memory": "192Mi"
+          },
+          "containerID": "containerd://bd33f640859a47b8edd8d26f7016d50e8489b9a96af4b1be2ccf04d0b93352f3",
+          "image": "docker.io/library/skills-1c:original",
+          "imageID": "sha256:fdb015a82fe82713c066c2db12dac3dd59de68b5c5b13b35fbe16a17c1621fbd",
+          "lastState": {},
+          "name": "pairs",
+          "ready": false,
+          "resources": {
+            "limits": {
+              "cpu": "2",
+              "memory": "336Mi"
+            },
+            "requests": {
+              "cpu": "500m",
+              "memory": "192Mi"
+            }
+          },
+          "restartCount": 0,
+          "started": false,
+          "state": {
+            "terminated": {
+              "containerID": "containerd://bd33f640859a47b8edd8d26f7016d50e8489b9a96af4b1be2ccf04d0b93352f3",
+              "exitCode": 0,
+              "finishedAt": "2026-11-24T18:24:42Z",
+              "reason": "Completed",
+              "startedAt": "2026-11-24T18:24:23Z"
+            }
+          },
+          "user": {
+            "linux": {
+              "gid": 0,
+              "supplementalGroups": [
+                0
+              ],
+              "uid": 65532
+            }
+          }
+        }
+      ],
+      "hostIP": "172.18.0.2",
+      "hostIPs": [
+        {
+          "ip": "172.18.0.2"
+        }
+      ],
+      "observedGeneration": 1,
+      "phase": "Succeeded",
+      "podIP": "10.244.0.27",
+      "podIPs": [
+        {
+          "ip": "10.244.0.27"
+        }
+      ],
+      "qosClass": "Burstable",
+      "startTime": "2026-11-24T18:24:22Z"
+    }
+  }
+]

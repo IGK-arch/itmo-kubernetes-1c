@@ -1,0 +1,38 @@
+using docker due to KIND_EXPERIMENTAL_PROVIDER
+No kind clusters found.
+using docker due to KIND_EXPERIMENTAL_PROVIDER
+Creating cluster "itmo-j3312" ...
+ • Ensuring node image (kindest/node:v1.34.0) 🖼  ...
+ ✓ Ensuring node image (kindest/node:v1.34.0) 🖼
+ • Preparing nodes 📦   ...
+ ✓ Preparing nodes 📦 
+ • Writing configuration 📜  ...
+ ✓ Writing configuration 📜
+ • Starting control-plane 🕹️  ...
+ ✓ Starting control-plane 🕹️
+ • Installing CNI 🔌  ...
+ ✓ Installing CNI 🔌
+ • Installing StorageClass 💾  ...
+ ✓ Installing StorageClass 💾
+ • Waiting ≤ 3m0s for control-plane = Ready ⏳  ...
+ ✓ Waiting ≤ 3m0s for control-plane = Ready ⏳
+ • Ready after 11s 💚
+Set kubectl context to "kind-itmo-j3312"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-itmo-j3312 --kubeconfig /var/lib/itmo-j3312-k8s/kubeconfig
+
+Have a nice day! 👋
+node/itmo-j3312-control-plane condition met
+NAME                       STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION                      CONTAINER-RUNTIME
+itmo-j3312-control-plane   Ready    control-plane   30s   v1.34.0   172.18.0.2    <none>        Debian GNU/Linux 12 (bookworm)   6.18.33.2-microsoft-standard-WSL2   containerd://2.1.3
+NAMESPACE            NAME                                               READY   STATUS    RESTARTS   AGE   IP           NODE                       NOMINATED NODE   READINESS GATES
+kube-system          coredns-66bc5c9577-q99zh                           1/1     Running   0          20s   10.244.0.2   itmo-j3312-control-plane   <none>           <none>
+kube-system          coredns-66bc5c9577-twx9f                           1/1     Running   0          20s   10.244.0.3   itmo-j3312-control-plane   <none>           <none>
+kube-system          etcd-itmo-j3312-control-plane                      1/1     Running   0          29s   172.18.0.2   itmo-j3312-control-plane   <none>           <none>
+kube-system          kindnet-qdp49                                      1/1     Running   0          21s   172.18.0.2   itmo-j3312-control-plane   <none>           <none>
+kube-system          kube-apiserver-itmo-j3312-control-plane            1/1     Running   0          27s   172.18.0.2   itmo-j3312-control-plane   <none>           <none>
+kube-system          kube-controller-manager-itmo-j3312-control-plane   1/1     Running   0          27s   172.18.0.2   itmo-j3312-control-plane   <none>           <none>
+kube-system          kube-proxy-5d2sd                                   1/1     Running   0          21s   172.18.0.2   itmo-j3312-control-plane   <none>           <none>
+kube-system          kube-scheduler-itmo-j3312-control-plane            1/1     Running   0          28s   172.18.0.2   itmo-j3312-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-7b8c8ddbd6-xz8gh            1/1     Running   0          19s   10.244.0.4   itmo-j3312-control-plane   <none>           <none>

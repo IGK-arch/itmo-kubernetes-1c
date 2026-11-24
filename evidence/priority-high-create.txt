@@ -1,0 +1,2 @@
+$ kubectl -n skills-1c create -f manifests/priority-high.json
+job.batch/priority-high created

@@ -1,0 +1,6 @@
+$ kubectl -n skills-1c get pods -l job-name=pairs-map -o wide
+NAME                READY   STATUS      RESTARTS   AGE   IP            NODE                       NOMINATED NODE   READINESS GATES
+pairs-map-0-gb4v8   0/1     Completed   0          10s   10.244.0.15   itmo-j3312-control-plane   <none>           <none>
+pairs-map-1-hnfrk   0/1     Completed   0          10s   10.244.0.17   itmo-j3312-control-plane   <none>           <none>
+pairs-map-2-jsnfk   0/1     Completed   0          10s   10.244.0.16   itmo-j3312-control-plane   <none>           <none>
+pairs-map-3-mtxz9   0/1     Completed   0          10s   10.244.0.18   itmo-j3312-control-plane   <none>           <none>
