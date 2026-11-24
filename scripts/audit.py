@@ -78,7 +78,8 @@ def run():
     assert quota['used_m']+quota['request_m']>quota['hard_m'] and quota['after_release']=='Running'
     assert all(x in quota['rejected'] for x in ('Forbidden','exceeded quota','500m','750m'))
     screenshots=list((E/'screenshots').glob('*.png'))
-    assert len({hashlib.sha256(p.read_bytes()).hexdigest() for p in screenshots})==len(screenshots)==4
+    assert {p.stem for p in screenshots}=={'memory','storage','result','cpu','scheduler'}
+    assert len({hashlib.sha256(p.read_bytes()).digest() for p in screenshots})==len(screenshots)
     print('Verified OOM and memory sizing, four PVCs and migrated objects, four simultaneous ranges,')
     print('full CSV and top 10, original lab 3 code, scheduler victim UID, wait events and quota.')
 

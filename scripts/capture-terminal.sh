@@ -40,6 +40,13 @@ capture storage 82 13 <<'CMDS'
 kubectl -n skills-1c get pvc | awk '{print $1,$2,$4}' | column -t
 kubectl -n skills-1c get jobs pairs-index pairs-map pairs-reduce
 CMDS
+reference=../lab3-mapreduce/results/optimized-1/skills_2.csv
+[[ -f "$reference" ]] || reference=reference/skills_2.csv
+capture result 90 7 <<CMDS
+wc -c results/skills_2.csv
+sha256sum results/skills_2.csv
+cmp results/skills_2.csv $reference && echo OK
+CMDS
 waiter=$(python3 -c "import json; print(json.load(open('evidence/scheduling.json'))['waiter'])")
 export WAIT_POD="$waiter"
 capture cpu 86 11 <<'CMDS'
